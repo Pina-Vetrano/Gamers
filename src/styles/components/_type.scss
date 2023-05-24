@@ -22,9 +22,9 @@ body {
 .big-title{
   font-size: 101px;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(#DFE4FE, #B28DF9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+background-image: linear-gradient(90deg, #DFE4FE, #B28DF9);
+background-clip: text;
+color: transparent;
   letter-spacing: 12px;
   max-width: 17ch;
 }
