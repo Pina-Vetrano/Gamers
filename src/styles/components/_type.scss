@@ -1,10 +1,19 @@
-body {
-  font-family: sans-serif;
-  font-size: $size-text;
-  line-height: 1.5;
-  color: $c-text;
+@import 'normalize.css';
+
+@font-face {
+  font-family: BrogiFREE;
+  src: url("../fonts/BrogiFREE.otf");
 }
 
-.title {
-  color: $c-alt;
+@font-face {
+  font-family: Thorngumbald-Regular;
+  src: url("fonts/Teko-Bold.ttf");
+}
+
+//.title--head{
+
+//}
+
+.big-title{
+  font-size: 101px;
 }
