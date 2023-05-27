@@ -30,10 +30,117 @@
     <script src="scripts/app.js" defer></script>
 </head>
 
-<body>
+<body data-theme="light">
+  <header>
+    <div class="header__linklogo">
 
-  <h1 class="big-title title title--head">Le gain d’XP 
+      <a href="index.html">
+          <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="140" height="140" fill="none" />
+              <path
+                  d="M39.6871 44.3466C40.8023 44.3466 41.7021 45.2586 41.6869 46.3737L41.2441 78.9646C41.2293 80.0585 40.3383 80.9375 39.2443 80.9375H37.4233C36.3293 80.9375 35.4383 80.0585 35.4235 78.9646L34.9807 46.3737C34.9655 45.2586 35.8653 44.3466 36.9805 44.3466H39.6871ZM38.3338 95.6534C37.1075 95.6534 36.0552 95.2142 35.1768 94.3359C34.2985 93.4576 33.8594 92.4053 33.8594 91.1789C33.8594 89.9526 34.2985 88.9003 35.1768 88.022C36.0552 87.1437 37.1075 86.7045 38.3338 86.7045C39.5601 86.7045 40.6125 87.1437 41.4908 88.022C42.3691 88.9003 42.8082 89.9526 42.8082 91.1789C42.8082 91.991 42.6011 92.7367 42.1868 93.4162C41.7891 94.0956 41.2505 94.6425 40.571 95.0568C39.9081 95.4545 39.1624 95.6534 38.3338 95.6534Z"
+                  fill="white" />
+              <path
+                  d="M77.5151 65.1278C76.4105 65.1278 75.5151 64.2324 75.5151 63.1278V61.7585C75.5151 60.6539 76.4105 59.7585 77.5151 59.7585H104.14C105.245 59.7585 106.14 60.6539 106.14 61.7585V63.1278C106.14 64.2324 105.245 65.1278 104.14 65.1278H77.5151ZM77.5151 79.8437C76.4105 79.8437 75.5151 78.9483 75.5151 77.8437V76.4744C75.5151 75.3698 76.4105 74.4744 77.5151 74.4744H104.14C105.245 74.4744 106.14 75.3698 106.14 76.4744V77.8437C106.14 78.9483 105.245 79.8437 104.14 79.8437H77.5151Z"
+                  fill="white" />
+          </svg>
+
+
+      </a>
+
+  </div>
+
+  <div class="header--second">
+
+
+      <button class="btn--burger">
+          <svg width="39" height="7" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M19.5 7C17.567 7 16 5.433 16 3.5V3.5C16 1.567 17.567 4.08341e-07 19.5 3.23847e-07V3.23847e-07C21.433 2.39353e-07 23 1.567 23 3.5V3.5C23 5.433 21.433 7 19.5 7V7Z"
+                  fill="white" />
+              <path
+                  d="M35.5 7C33.567 7 32 5.433 32 3.5V3.5C32 1.567 33.567 4.08341e-07 35.5 3.23847e-07V3.23847e-07C37.433 2.39353e-07 39 1.567 39 3.5V3.5C39 5.433 37.433 7 35.5 7V7Z"
+                  fill="white" />
+              <path
+                  d="M3.5 7C1.567 7 -6.84959e-08 5.433 -1.5299e-07 3.5V3.5C-2.37484e-07 1.567 1.567 4.08341e-07 3.5 3.23847e-07V3.23847e-07C5.433 2.39353e-07 7 1.567 7 3.5V3.5C7 5.433 5.433 7 3.5 7V7Z"
+                  fill="white" />
+          </svg>
+
+      </button>
+      <button class="btn--grid">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.6667 6.5H6.5V21.6667H21.6667V6.5Z" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M45.4997 6.5H30.333V21.6667H45.4997V6.5Z" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M45.4997 30.3333H30.333V45.5H45.4997V30.3333Z" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21.6667 30.3333H6.5V45.5H21.6667V30.3333Z" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+
+      </button>
+      <div class="btn__lightdark--blockd">
+
+          <button class="btn btn__lightdark">
+
+              <span class="text__darklight"></span>
+
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                  clip-rule="evenodd">
+                  <path
+                      d="M13 9h9l-14 15 3-9h-9l14-15-3 9zm-8.699 5h8.086l-1.987 5.963 9.299-9.963h-8.086l1.987-5.963-9.299 9.963z" />
+              </svg>
+          </button>
+      </div>
+      <div class="header__navigation">
+
+          <nav>
+
+              <ul class="list--header">
+                  <li>
+                      <a class="link link--header link--active" href="index.html">accueil</a>
+                  </li>
+
+                  <li>
+                      <a class="link link--header" href="experience.html">expérience</a>
+                  </li>
+
+              </ul>
+
+          </nav>
+
+      </div>
+
+  </div>
+
+</header>
+
+<div class="header__navigation--m">
+  <ul class="list__m--header">
+      <li>
+          <a class="link mlink--header mlink--active" href="index.html">accueil</a>
+      </li>
+
+      <li>
+          <a class="link mlink--header" href="experience.html">expérience</a>
+      </li>
+  </ul>
+  <div class="btn__lightdark--block">
+  </div>
+
+</div>
+<main>
+  <h1 class="big-title gradient-title title title--head">Le gain d’XP 
     des joueurs pc</h1>
-
+<p class="text bluetext underbigtitle">Dans le cadre de mon travail de fin d’année, je vous transmet ici l’expérience que tout joueurs PC vit et gagnera.</p>
+<h2 class="title second-title gradient-title">Échange, écoute et Séléction</h2>
+<div class="">
+  <p class="bluetext">Le lancement de ce projet de départ consistait à promouvoir la culture geek que ça soit par une ASBL sur des jeux-vidéos ou simplement aller à la rencontre des joueurs. J’ai trouvé la deuxième idée intéressante car, je ne vous invente rien, ce sont les joueurs qui sont le plus concernés par les jeux vidéos.
+    Le sujet m’intéresse beaucoup car tout le monde y trouve son lot de divertissement.</p>
+  </p>
+  <p class="bluetext"> me permet de ramener à la surface certains points nuisibles que les joueurs rencontrent bien souvent, mais qui sont bien souvent minimisés voire banalisés par ce moment de loisir. </div>
+  </p>
 </body>
 </html>

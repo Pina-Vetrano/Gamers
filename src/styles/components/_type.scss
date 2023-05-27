@@ -13,18 +13,29 @@
 //.title--head{
 
 //}
-body {
-  color: #ffffff;
-}
+
 .title {
   font-family: 'Teko Regu';
-}
-.big-title{
-  font-size: 101px;
   text-transform: uppercase;
-background-image: linear-gradient(90deg, #DFE4FE, #B28DF9);
-background-clip: text;
-color: transparent;
-  letter-spacing: 12px;
-  max-width: 17ch;
+}
+
+.big-title {
+  font-size: 35px;
+  letter-spacing: 7px;
+  max-width: 20ch;
+}
+.gradient-title{
+  background-image: linear-gradient(90deg, #DFE4FE, #B28DF9);
+  background-clip: text;
+  color: transparent;
+}
+.bluetext{
+  color: #A9B7DC;
+}
+@media only screen and (min-width: 750px) {}
+
+@media only screen and (min-width: 1024px) {
+  .big-title {
+    font-size: 101px;
+  }
 }
