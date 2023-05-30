@@ -9,7 +9,7 @@
     --color-linky: #F05A7E;
     --color-link: #FFFFFF;
     --color-visited: #710b0b;
-    --color-blueish: #84C4CE;
+    --color-body: #03023B;
   }
   
   @media(prefers-color-scheme: dark) {
@@ -24,14 +24,14 @@
     --color-primary: #f5f5f5;
     --color-secondary: #161616;
     --color-visited: #b97d7d;
-    --color-link: #ffffff;
+    --color-body: #dadada;
   }
   
   [data-theme='dark'] {
     --color-primary: #161616;
     --color-secondary: #f5f5f5;
     --color-visited: #710b0b;
-    --color-link: #000000;
+    --color-link: #ffffff;
   }
   
   /* mobile*/
@@ -80,7 +80,6 @@
   body {
     background-color: var(--color-secondary);
     line-height: 1.8;
-    font-family: "Thorngumbald-Regular", sans-serif;
     font-size: 18px;
     margin: 0;
     font-weight: 400;
@@ -132,10 +131,99 @@
   }
   
 body {
-    background-color: #03023B;
+    background-color: var( --color-body);
 }
 main{
     max-width: 1400px;
     margin: auto;
     padding: 20px;
+}
+.text__darklight {
+  display: none;
+}
+
+
+.darkModeToggle {
+  position: relative;
+  width: 100%;
+  grid-column-start: 2 ;
+}
+
+:root {
+  --light: black;
+}
+
+input{
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  cursor: pointer;
+  position: relative;
+  top: -8px;
+  width: 70px;
+  height: 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  background: none;
+  border-width: 2px;   
+  border-color: black; 
+  border-style: solid;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: none;
+  transition: 0.3s;
+  background-image: url(../assets/images/buttonmode.svg);
+}
+
+input:checked ~ .slider::before {
+  transform: translateX(38px);
+
+  background-image: url(../assets/images/buttonmode.svg);
+}
+
+
+.header--second {
+  display: flex;
+    align-items: center;
+    margin-right: 2em;
+    /* flex-direction: row-reverse; */
+    gap: 2em;
+}
+.logo{
+  padding-left: 9px;
+  padding-top: 0px;
+  width: 58px;
+  height: 25px;
+}
+
+.header__navigation {
+  visibility: hidden;
+}
+.headelmob_head {
+  height: 109vh;
+  width: 53vh;
+  top: -11em;
+  z-index: -1;
+  position: absolute;
+}
+.header__navigation--m {
+  display: none;
+}
+.elipseradial {
+  width: 55%;
+  position: absolute;
+  z-index: -5;
+}
+.elipseradial--header{
+  left: 47%;
 }

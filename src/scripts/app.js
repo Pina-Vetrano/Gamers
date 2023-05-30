@@ -19,7 +19,8 @@ function toggleNavigation() {
 // changer le theme et le nom du bouton
 
 let changeTheme = document.querySelector(".text__darklight");
-const darkTheme = document.querySelector(".btn");
+
+const darkTheme = document.querySelector(".btnTheme");
 
 darkTheme.addEventListener("click", function(){
     if(document.body.dataset.theme === "dark"){
@@ -55,15 +56,3 @@ let answerDate = document.querySelector(".date");
 let today = new Date();
 let year = today.getFullYear();
 answerDate.innerHTML = year;
-
-let gridButton = document.querySelector(".btn--grid")
-
-gridButton.addEventListener("click", function() {
-    document.querySelector("#grid-overlay").style.display = "block";
-});
-
-let gridOverlay = document.querySelector("#grid-overlay")
-
-gridOverlay.addEventListener("click", function() {
-    document.querySelector("#grid-overlay").style.display = "none";
-});
