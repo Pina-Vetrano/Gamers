@@ -225,5 +225,12 @@ input:checked ~ .slider::before {
   z-index: -5;
 }
 .elipseradial--header{
-  left: 47%;
+  left: 44%;
+}
+.headset {
+  width: 51%;
+  position: relative;
+  z-index: 1;
+  /* left: 44%; */
+  display: flex;
 }
