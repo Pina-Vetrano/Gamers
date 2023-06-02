@@ -122,7 +122,7 @@
     text-decoration: none;
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 13px;
     padding: 0;
   }
   
@@ -136,7 +136,7 @@
 body {
     background-color: var( --color-body);
 }
-main{
+main {
     max-width: 1920px;
 }
 main, footer {
@@ -157,7 +157,7 @@ main, footer {
   --light: black;
 }
 
-input{
+input {
   position: absolute;
   display: none;
 }
@@ -203,8 +203,8 @@ input:checked ~ .slider::before {
     /* flex-direction: row-reverse; */
     gap: 2em;
 }
-.logo{
-  padding-left: 9px;
+.logo {
+  padding-left: 26px;
   padding-top: 0px;
   width: 58px;
   height: 33px;
@@ -220,6 +220,7 @@ input:checked ~ .slider::before {
   z-index: -1;
   position: absolute;
   left: -2%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .header__navigation--m {
   display: none;
@@ -229,27 +230,66 @@ input:checked ~ .slider::before {
   position: absolute;
   z-index: -5;
 }
-.elipseradial--header{
+.elipseradial--header {
   left: 44%;
 }
 .headset {
-  width: 26%;
-  position: absolute;
+  width: 100%;
+  position: relative;
   z-index: 1;
-  top: 137vw;
-  left: 65%;
-}
-.iceberg{
-  width: 30%;
-  position: absolute;
-  z-index: 1;
-  top: 273vw;
-  left: 62%;
-}
-.building{
-  width: 53%;
-  position: absolute;
-  z-index: 1;
-  top: 369vw;
   left: -2%;
+}
+.iceberg {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: -16vw;
+  left: -2%;
+  height: 50%;
+}
+.building {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: -18vw;
+  left: -2%;
+}
+.building-text {
+  margin-top: -35%;
+
+}
+.sectionbase {
+  padding-top: 8rem;
+  margin-bottom: -12rem;
+}
+.com {
+  margin-top: 2rem;
+  margin-left: -2em;
+}
+.com__liste{
+  display: flex;
+  flex-direction: row;
+    align-items: flex-start;
+    list-style: none;
+}
+.com__liste .com__el {
+  position: relative;
+  margin-left: 1em;
+}
+.com__icon {
+  width: 12vh;
+}
+.bubblegame{
+  width: 211%;
+  position: relative;
+  z-index: -1;
+  top: -26vw;
+  left: -13%;
+}
+.vram {
+  width: 78%;
+  position: relative;
+  z-index: -1;
+  top: -1vw;
+  left: 7%;
 }
