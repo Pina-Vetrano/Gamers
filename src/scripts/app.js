@@ -56,3 +56,21 @@ let answerDate = document.querySelector(".date");
 let today = new Date();
 let year = today.getFullYear();
 answerDate.innerHTML = year;
+
+
+
+// animation 
+var verif = document.querySelector(".vram");
+
+if (verif) {
+  gsap__WEBPACK_IMPORTED_MODULE_0__["default"].from(".vram", {
+    scale: 1.5,
+    duration: 2,
+    scrollTrigger: {
+      trigger: ".vram",
+      start: 'top bottom',
+      end: 'bottom top',
+      scrub: 0.5
+    }
+  });
+}

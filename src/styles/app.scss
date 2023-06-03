@@ -263,7 +263,7 @@ input:checked ~ .slider::before {
   margin-bottom: -12rem;
 }
 .com {
-  margin-top: 2rem;
+  margin-top: 6rem;
   margin-left: -2em;
 }
 .com__liste{
@@ -279,12 +279,14 @@ input:checked ~ .slider::before {
 .com__icon {
   width: 12vh;
 }
-.bubblegame{
-  width: 211%;
+.bubblegame {
+  width: 166%;
+  height: 100%;
   position: relative;
   z-index: -1;
-  top: -26vw;
-  left: -13%;
+  top: -20vw;
+  left: 0;
+  margin-left: -186px;
 }
 .vram {
   width: 78%;
