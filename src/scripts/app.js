@@ -1,6 +1,12 @@
 console.info('Hello world');
 'use strict'
 
+/*animation landing-page*/
+
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 // navigation
 
 let navButton = document.querySelector(".btn--burger")
@@ -60,6 +66,20 @@ answerDate.innerHTML = year;
 
 
 // animation 
+
+var mock1 = document.querySelector(".vram");
+if (mock1){
+    gsap.from(".vram", {
+    x: -500,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".vram",
+      start:'top bottom',
+      end:'bottom top',
+      scrub: 1,
+    },
+  });
+}
 var verif = document.querySelector(".vram");
 
 if (verif) {
@@ -72,5 +92,18 @@ if (verif) {
       end: 'bottom top',
       scrub: 0.5
     }
+  });
+}
+var mock1 = document.querySelector(".mockup1");
+if (mock1){
+    gsap.from(".mockup1", {
+    x: -600,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".mockup1",
+      start:'top top',
+      end:'bottom top',
+      scrub: 0.5,
+    },
   });
 }
