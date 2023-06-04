@@ -94,16 +94,48 @@ if (verif) {
     }
   });
 }
-var mock1 = document.querySelector(".mockup1");
-if (mock1){
-    gsap.from(".mockup1", {
-    x: -600,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".mockup1",
-      start:'top top',
-      end:'bottom top',
-      scrub: 0.5,
-    },
+
+gsap.from(".headset", {
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".headset",
+    start: "center 90%",
+    end: "center 50%",
+    scrub: 0.5
+  }
+});
+
+gsap.from(".iceberg", {
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".iceberg",
+    start: "center 90%",
+    end: "center 50%",
+    scrub: 0.5
+  }
+});
+
+
+gsap.fromTo(".headelhead",
+  { y: 90 },
+  {
+    y: 0,
+    transformOrigin: "50% 50%",
+    repeat: 0,
+    ease: "elastic.out(1, 0.3)",
+    duration: 4
   });
+
+
+  gsap.timeline({ repeat:-1, repeatDelay:0, yoyo:true})
+    .to('.m', {duration:(i)=>[0.8,1.3][i], y:-10266, ease:'steps(29)', stagger:-0.3}, 0)
+    .to('.store', {duration:2, scale:1.1, transformOrigin:'50% 50%', ease:'power2', onComplete:swapMask}, 0)
+
+let currentMask = 1;
+function swapMask(){
+  if (currentMask==3) currentMask = 1;
+  else currentMask++;
+  gsap.set('.m', {attr:{'xlink:href':'https://assets.codepen.io/721952/liquidMask'+currentMask+'.svg'}})
 }

@@ -84,7 +84,7 @@
     font-size: 18px;
     margin: 0;
     font-weight: 400;
-    font-family: 'remgu';
+    font-family: 'remthin';
     -webkit-font-smoothing: antialiased;
     color: var(--color-secondary);
     max-width: 3000px;
@@ -213,7 +213,7 @@ input:checked ~ .slider::before {
 .header__navigation {
   visibility: hidden;
 }
-.headelmob_head {
+.headelhead {
   height: 109vh;
   width: 56vh;
   top: -12em;
@@ -229,41 +229,38 @@ input:checked ~ .slider::before {
   width: 55%;
   position: absolute;
   z-index: -5;
-}
-.elipseradial--header {
   left: 44%;
 }
+
 .headset {
-  width: 100%;
-  position: relative;
   z-index: 1;
-  left: -2%;
+  left: 0;
 }
 .iceberg {
-  width: 100%;
-  position: relative;
   z-index: 1;
   top: -16vw;
   left: -2%;
   height: 50%;
 }
 .building {
-  width: 100%;
-  position: relative;
   z-index: 1;
   top: -18vw;
   left: -2%;
 }
-.building-text {
-  margin-top: -35%;
-
+.informatique {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: relative;
 }
+
 .sectionbase {
   padding-top: 8rem;
   margin-bottom: -12rem;
 }
 .com {
-  margin-top: 6rem;
+  margin-top: -11vh;
   margin-left: -2em;
 }
 .com__liste{
@@ -284,7 +281,7 @@ input:checked ~ .slider::before {
   height: 100%;
   position: relative;
   z-index: -1;
-  top: -20vw;
+  top: 10vw;
   left: 0;
   margin-left: -186px;
 }

@@ -2,19 +2,23 @@
 
 @font-face {
   font-family: Teko Regu;
-  src: url("../assets/fonts/Teko-regular.ttf");
+  src: url("../assets/fonts/Teko-regular.otf");
 }
 @font-face {
   font-family: remgu;
-  src: url("../assets/fonts/REM-Regular.tff"); //ne fonctionne pas ? 
+  src: url("../assets/fonts/REM-Regular.otf"); //ne fonctionne pas ? 
+}
+@font-face {
+  font-family: remthin;
+  src: url("../assets/fonts/rem-thin.otf"); //ne fonctionne pas ? 
 }
 
 //}
 body {
-  font-family: 'remgu';
+  font-family: "remgu";
 }
 h1, h2, h3 {
-  font-family: 'Teko Regu';
+  font-family: "Teko Regu";
   background-image: linear-gradient(90deg, #DFE4FE, #B28DF9);
   background-clip: text;
   color: transparent;
