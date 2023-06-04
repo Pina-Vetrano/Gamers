@@ -284,9 +284,12 @@ input:checked ~ .slider::before {
   margin-left: -186px;
 }
 .vram {
-  width: 78%;
+  width: 66%;
   position: relative;
   z-index: -1;
-  top: -1vw;
+  top: 4vw;
   left: 7%;
+}
+.informatique--tuto {
+  width: 100%;
 }

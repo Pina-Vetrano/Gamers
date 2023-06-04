@@ -75,8 +75,8 @@ if (mock1){
     scrollTrigger: {
       trigger: ".vram",
       start:'top bottom',
-      end:'bottom top',
-      scrub: 1,
+      end:'bottom center',
+      scrub: 2,
     },
   });
 }
