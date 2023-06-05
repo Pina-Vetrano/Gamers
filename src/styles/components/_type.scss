@@ -47,9 +47,7 @@ h3 {
 .bluetext{
   color: #A9B7DC;
 }
-.bluetext--side{
-  padding-top: 4rem;
-}
+
 p {
   color: #DFE4FE;
   font-family: sans-serif;
@@ -65,7 +63,6 @@ p {
 }
 .space {
   max-width: 23ch;
-  padding-bottom: 3rem;
 }
 .big-paragraph {
   font-size: 24px;
@@ -76,5 +73,9 @@ p {
 @media only screen and (min-width: 1024px) {
   .big-title {
     font-size: 101px;
+    max-width: 11ch;
+  }
+  body {
+    font-size: 24px;
   }
 }

@@ -67,8 +67,8 @@ answerDate.innerHTML = year;
 
 // animation 
 
-var mock1 = document.querySelector(".vram");
-if (mock1){
+var svgvram = document.querySelector(".vram");
+if (svgvram){
     gsap.from(".vram", {
     x: -500,
     duration: 1,
@@ -126,6 +126,7 @@ gsap.fromTo(".headelhead",
     repeat: 0,
     ease: "elastic.out(1, 0.3)",
     duration: 4
+    
   });
 
 
@@ -139,3 +140,32 @@ function swapMask(){
   else currentMask++;
   gsap.set('.m', {attr:{'xlink:href':'https://assets.codepen.io/721952/liquidMask'+currentMask+'.svg'}})
 }
+gsap.to('.overlay', {y: '-100vh', delay:1.5});
+gsap.to('.layer-1', {y: '-100vh', delay: .5});
+gsap.to('.layer-2', {y: '-100vh', delay: .7});
+gsap.to('.layer-3', {y: '-100vh', delay: .9});
+
+gsap.from(".bubblegame", {
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".bubblegame",
+    start: "center 80%",
+    end:'bottom center',
+    scrub: 0.5
+
+  }
+});
+
+let scrollContainer = document.querySelector(".gallery");
+let backBtn = document.getElementById("backBtn");
+let nextBtn = document.getElementById("nextBtn");
+
+nextBtn.addEventListener("click", () => {
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft += 900;
+});
+backBtn.addEventListener("click", () => {
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft += 900;
+});
