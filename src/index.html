@@ -1,419 +1,451 @@
-    <!DOCTYPE html>
-    <html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Twitter Card data -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="pina-vetrano.be">
-        <meta name="twitter:creator" content="# @pinavetrano">
-        <meta name=" twitter:title" content="PVetrano - TFA">
-        <meta name="twitter:description" content="Projet TFA - HEAJ">
-        <!-- Twitter summary card with large image must be at least 280x150px -->
-        <meta name="twitter:image" content="http://www.pinavetrano.be/projets/iolce/assets/images/logo_dark.svg">
-        <!-- Open Graph data -->
-        <meta property="og:site_name" content="pina-vetrano">
-        <meta property="og:title" content="vetrano-pina - TFA">
-        <meta property="og:description" content="Projet TFA - Pina Vetrano - HEAJ">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://pinavetrano.be/">
-        <meta property="og:image" content="assets/images/logo_dark.svg">
-        <meta property="og:image:width" content="1800">
-        <meta property="og:image:height" content="945">
-        <link rel="icon" type="image/x-icon" href="./assets/images/favicongg.svg">
-        <title>TFA Pina Vetrano — DWT — Heaj</title>
-        <!-- CSS and Javascript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-       
-        <link rel="stylesheet" href="styles/app.css">
-       
-        <!-- <link rel="stylesheet" href="styles/components/normalize.css"> Refused to apply style from 'http://localhost:3000/styles/components/normalize.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.-->
-        <script src="scripts/app.js" defer></script>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="pina-vetrano.be">
+    <meta name="twitter:creator" content="# @pinavetrano">
+    <meta name=" twitter:title" content="PVetrano - TFA">
+    <meta name="twitter:description" content="Projet TFA - HEAJ">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image" content="http://www.pinavetrano.be/projets/iolce/assets/images/logo_dark.svg">
+    <!-- Open Graph data -->
+    <meta property="og:site_name" content="pina-vetrano">
+    <meta property="og:title" content="vetrano-pina - TFA">
+    <meta property="og:description" content="Projet TFA - Pina Vetrano - HEAJ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinavetrano.be/">
+    <meta property="og:image" content="assets/images/logo_dark.svg">
+    <meta property="og:image:width" content="1800">
+    <meta property="og:image:height" content="945">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicongg.svg">
+    <title>TFA Pina Vetrano — DWT — Heaj</title>
+    <!-- CSS and Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
-    </head>
+    <link rel="stylesheet" href="styles/app.css">
 
-    <body>
-        <!-- <span class="darkModeToggle">
+    <!-- <link rel="stylesheet" href="styles/components/normalize.css"> Refused to apply style from 'http://localhost:3000/styles/components/normalize.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.-->
+    <script src="scripts/app.js" defer></script>
+
+
+</head>
+
+<body>
+    <!-- <span class="darkModeToggle">
             <label>
                 <input type = 'checkbox' class="btnTheme">
                 <span class = 'slider'></span>
             </label>
         </span> -->
-        
-        <header>
-            <div>
 
-                <a href="index.html">
-                    <img class="logo" src="assets/images/gégé.svg" alt="logo">
+    <header>
+        <div>
 
-                </a>
+            <a href="index.html">
+                <img class="logo" src="assets/images/gégé.svg" alt="logo">
 
-            </div>
+            </a>
 
-            <div class="header--second">
+        </div>
+
+        <div class="header--second">
 
 
-                <button class="btn--burger">
-                    <svg width="39" height="7" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19.5 7C17.567 7 16 5.433 16 3.5V3.5C16 1.567 17.567 4.08341e-07 19.5 3.23847e-07V3.23847e-07C21.433 2.39353e-07 23 1.567 23 3.5V3.5C23 5.433 21.433 7 19.5 7V7Z"
-                            fill="white" />
-                        <path
-                            d="M35.5 7C33.567 7 32 5.433 32 3.5V3.5C32 1.567 33.567 4.08341e-07 35.5 3.23847e-07V3.23847e-07C37.433 2.39353e-07 39 1.567 39 3.5V3.5C39 5.433 37.433 7 35.5 7V7Z"
-                            fill="white" />
-                        <path
-                            d="M3.5 7C1.567 7 -6.84959e-08 5.433 -1.5299e-07 3.5V3.5C-2.37484e-07 1.567 1.567 4.08341e-07 3.5 3.23847e-07V3.23847e-07C5.433 2.39353e-07 7 1.567 7 3.5V3.5C7 5.433 5.433 7 3.5 7V7Z"
-                            fill="white" />
-                    </svg>
+            <button class="btn--burger">
+                <svg width="39" height="7" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.5 7C17.567 7 16 5.433 16 3.5V3.5C16 1.567 17.567 4.08341e-07 19.5 3.23847e-07V3.23847e-07C21.433 2.39353e-07 23 1.567 23 3.5V3.5C23 5.433 21.433 7 19.5 7V7Z"
+                        fill="white" />
+                    <path
+                        d="M35.5 7C33.567 7 32 5.433 32 3.5V3.5C32 1.567 33.567 4.08341e-07 35.5 3.23847e-07V3.23847e-07C37.433 2.39353e-07 39 1.567 39 3.5V3.5C39 5.433 37.433 7 35.5 7V7Z"
+                        fill="white" />
+                    <path
+                        d="M3.5 7C1.567 7 -6.84959e-08 5.433 -1.5299e-07 3.5V3.5C-2.37484e-07 1.567 1.567 4.08341e-07 3.5 3.23847e-07V3.23847e-07C5.433 2.39353e-07 7 1.567 7 3.5V3.5C7 5.433 5.433 7 3.5 7V7Z"
+                        fill="white" />
+                </svg>
 
-                </button>
+            </button>
 
-                <div class="header__navigation">
+            <div class="header__navigation">
 
-                    <nav>
+                <nav>
 
-                        <ul class="list--header">
-                            <li>
-                                <a class="link link--header link--active" href="index.html">accueil</a>
-                            </li>
+                    <ul class="list--header">
+                        <li>
+                            <a class="link link--header link--active" href="index.html">accueil</a>
+                        </li>
 
-                            <li>
-                                <a class="link link--header" href="experience.html">expérience</a>
-                            </li>
+                        <li>
+                            <a class="link link--header" href="experience.html">expérience</a>
+                        </li>
 
-                        </ul>
+                    </ul>
 
-                    </nav>
+                </nav>
 
-                </div>
-
-            </div>
-<div class="overlay">
-    <div class="layer layer-1"></div>
-    <div class="layer layer-2"></div>
-    <div class="layer layer-3"></div>
-</div>
-        </header>
-        <img class="headelhead" src="assets/images/headel.svg" alt="fond en pointillés">
-            
-        <div class="header__navigation--m">
-            <ul class="list__m--header">
-                <li>
-                    <a class="link mlink--header mlink--active" href="index.html">accueil</a>
-                </li>
-
-                <li>
-                    <a class="link mlink--header" href="experience.html">expérience</a>
-                </li>
-            </ul>
-            <div class="btn__lightdark--block">
             </div>
 
         </div>
-        <main>
+        <div class="overlay">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div class="layer layer-3"></div>
+        </div>
+    </header>
+    <img class="headelhead" src="assets/images/headel.svg" alt="fond en pointillés">
 
-            <img class="elipseradial" src="assets/images/elipseradial.png" alt="fond en pointillés">
-            <h1 class="big-title title title--head">Le gain d’XP
-                des joueurs pc</h1>
-            <p class="text bluetext underbigtitle">Dans le cadre de mon travail de fin d’année, je vous transmet ici
-                l’expérience que tout joueurs PC vit et gagnera.</p>
-            <h2 class="title second-title">Échange, écoute et Séléction</h2>
-            <section class="main">
-                <div class="grid">
-                    <p class="bluetext">Le lancement de ce projet de départ consistait à promouvoir la culture geek que ça
-                        soit
-                        par une ASBL sur des jeux-vidéos ou simplement aller à la rencontre des joueurs. J’ai trouvé la
-                        deuxième
-                        idée intéressante car, je ne vous invente rien, ce sont les joueurs qui sont le plus concernés par
-                        les
-                        jeux vidéos.
-                        Le sujet m’intéresse beaucoup car tout le monde y trouve son lot de divertissement.</p>
-                    <img class="informatique headset" src="assets/images/headset.gif">
-                    <p class="bluetext space dgrid-start2 dgrid-end6">Cela me permet de ramener à la surface certains points
-                        nuisibles
-                        que les joueurs rencontrent bien souvent, mais qui sont bien souvent minimisés voire banalisés par
-                        ce
-                        moment de loisir. </p>
-                        <img class="informatique iceberg" src="assets/images/icebergedit.gif">
-                    <div class="debut">
-                        <h2 class="title uppertitle">Zone de départ</h2>
-                        <h2 class="title undertitle">Interraction</h2>
-                        <!--Code mask: Tom Miller-->
-                        <svg viewBox="0 0 630 352" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="m1">
-                                <image class="m" xlink:href="https://assets.codepen.io/721952/liquidMask1.svg" y="-1" width="630" height="10620" />
-                            </mask>
-                            <mask id="m2">
-                                <image class="m" class="maskImg" xlink:href="https://assets.codepen.io/721952/liquidMask1.svg" y="-1" width="630" height="10620" />
-                            </mask>
-                            <g mask="url(#m1)">
-                              <image class="store" xlink:href="assets/images/icon_gamebuilding.svg" width="630" height="420" />
-                            </g>
-                          </svg>
-                        <p class="building-text">Mon idée originelle partait du fait que je voulais simplement comprendre
-                            l'expérience des joueurs.
-                        </p><p>Ma mission était maintenant d’aller voir des ASBL et à des salles de jeux vidéo comme Gamestate
-                            où
-                            les gens se retrouvent pour jouer afin que je leur propose de répondre à mes questions.</p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <p class="center">J’ai rencontré des joueurs dans des applications de messagerie gratuites,
-                        sur des plateformes de streaming et aussi dans des évènements consacrés aux jeux vidéo.</p>
-                    
-                        <img class="informatique bubblegame dgrid-start1 dgrid-end7" src="assets/images/bubblegame.svg" alt="fond en pointillés">
-                    <div class="list list--icon">
-                        <div class="com">
-                            <ul class="com__liste">
-                                <li class="com__el">
-                                    <img class="com__icon" src="assets/images/icon_msg.svg" alt="">
-                                </li>
-                                <li class="com__el">
-                                    <img class="com__icon" src="assets/images/icon_streaming.svg" alt="">
-                                </li>
-                                <li class="com__el">
-                                    <img class="com__icon" src="assets/images/icon_interview.svg" alt="">
-                                </li>
+    <div class="header__navigation--m">
+        <ul class="list__m--header">
+            <li>
+                <a class="link mlink--header mlink--active" href="index.html">accueil</a>
+            </li>
 
-                            </ul>
-                        </div>
+            <li>
+                <a class="link mlink--header" href="experience.html">expérience</a>
+            </li>
+        </ul>
+        <div class="btn__lightdark--block">
+        </div>
+
+    </div>
+    <main>
+
+        <img class="elipseradial" src="assets/images/elipseradial.png" alt="fond en pointillés">
+        <h1 class="big-title title title--head">Le gain d’XP
+            des joueurs pc</h1>
+        <p class="text bluetext underbigtitle">Dans le cadre de mon travail de fin d’année, je vous transmet ici
+            l’expérience que tout joueurs PC vit et gagnera.</p>
+        <h2 class="title second-title">Échange, écoute et Séléction</h2>
+        <section class="main">
+            <div class="grid">
+                <p class="bluetext">Le lancement de ce projet de départ consistait à promouvoir la culture geek que ça
+                    soit
+                    par une ASBL sur des jeux-vidéos ou simplement aller à la rencontre des joueurs. J’ai trouvé la
+                    deuxième
+                    idée intéressante car, je ne vous invente rien, ce sont les joueurs qui sont le plus concernés par
+                    les
+                    jeux vidéos.
+                    Le sujet m’intéresse beaucoup car tout le monde y trouve son lot de divertissement.</p>
+                <img class="informatique headset" src="assets/images/headset.gif">
+                <p class="bluetext space dgrid-start1 dgrid-end6">Cela me permet de ramener à la surface certains points
+                    nuisibles
+                    que les joueurs rencontrent bien souvent, mais qui sont bien souvent minimisés voire banalisés par
+                    ce
+                    moment de loisir. </p>
+                <img class="informatique iceberg" src="assets/images/icebergedit.gif">
+                <div class="debut grid">
+                    <h2 class="title uppertitle dgrid-start5 dgrid-end7">Zone de départ</h2>
+                    <h2 class="title undertitle dgrid-start5 dgrid-end7">Interraction</h2>
+                    <!--Code mask: Tom Miller-->
+                    <svg class="store dgrid-start1 dgrid-end6" viewBox="0 0 630 352" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="m1">
+                            <image class="m" xlink:href="https://assets.codepen.io/721952/liquidMask1.svg" y="-1"
+                                width="630" height="10620" />
+                        </mask>
+                        <mask id="m2">
+                            <image class="m" class="maskImg"
+                                xlink:href="https://assets.codepen.io/721952/liquidMask1.svg" y="-1" width="630"
+                                height="10620" />
+                        </mask>
+                        <g mask="url(#m1)">
+                            <image class="store" xlink:href="assets/images/icon_gamebuilding.svg" width="630"
+                                height="420" />
+                        </g>
+                    </svg>
+                    <p class="building-text">Mon idée originelle partait du fait que je voulais simplement comprendre
+                        l'expérience des joueurs.
+                    </p>
+                    <p class=" building-text building-text--down">Ma mission était maintenant d’aller voir des ASBL et à
+                        des salles de jeux vidéo comme Gamestate
+                        où
+                        les gens se retrouvent pour jouer afin que je leur propose de répondre à mes questions.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bubble-section">
+            <div class="grid">
+                <img class="informatique bubblegame dgrid-start1 dgrid-end7" src="assets/images/bubblegame.svg"
+                    alt="fond en pointillés">
+                <p class="big-paragraph dgrid-start2 dgrid-end7">J’ai rencontré des joueurs dans des applications de
+                    messagerie gratuites,
+                    sur des plateformes de streaming et aussi dans des évènements consacrés aux jeux vidéo.</p>
+                <div class="list list--icon">
+                    <div class="com">
+                        <ul class="com__liste">
+                            <li class="com__el">
+                                <img class="com__icon" src="assets/images/icon_msg.svg" alt="">
+                            </li>
+                            <li class="com__el">
+                                <img class="com__icon" src="assets/images/icon_streaming.svg" alt="">
+                            </li>
+                            <li class="com__el">
+                                <img class="com__icon" src="assets/images/icon_interview.svg" alt="">
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <section class="rencontre">
-                <div class="gallery-wrap">
-                    <img class="arrow" src="assets/images/back.png" id="backBtn">
-                    <div class="gallery">
-                        <div>
-                            <span><img src="assets/images/img-1.png"></span>
-                        </div>
-                        <div>
-                            <span><img src="assets/images/img-2.png"></span>
-                        </div>
-                        <div>
-                            <span><img src="assets/images/img-3.png"></span>
-                        </div>
-                        <div>
-                            <span><img src="assets/images/img-4.png"></span>
-                        </div>
-                        <div>
-                            <span><img src="assets/images/img-5.png"></span>
-                        </div>
-                        <div>
-                            <span><img src="assets/images/img-6.png"></span>
-                        </div>
+            </div>
+        </section>
+        <section class="rencontre grid">
+            <div class="gallery-wrap">
+                <img class="arrow" src="assets/images/back.png" id="backBtn">
+                <div class="gallery">
+                    <div>
+                        <span><img src="assets/images/img-1.png"></span>
                     </div>
-                    <img class="arrow" src="assets/images/next.png" id="nextBtn">
+                    <div>
+                        <span><img src="assets/images/img-2.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="assets/images/img-3.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="assets/images/img-4.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="assets/images/img-5.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="assets/images/img-6.png"></span>
+                    </div>
                 </div>
-               <p class="instruction-slide">swipez sur les côtés</p>
-                <p class="big-paragraph">Lors de mes rencontres, que ça soit en face à face ou bien à distance, elles
-                    étaient absolument toutes formidable sans exception ! </p>
-                <p class="bluetext">Leur yeux pétillaient de passions pour les jeux vidéo et leur envie de mettre en avant
-                    un domaine qui est tout le temps critiqué, les motivaient. Je ne sais pas si c’est le costume de mouton
+                <img class="arrow" src="assets/images/next.png" id="nextBtn">
+            </div>
+            <p class="instruction-slide dgrid-start3 dgrid-end7">swipez sur les côtés</p>
+            <div class="container">
+                <p>Lors de mes rencontres, que ça soit en face à face ou bien à distance, elles étaient absolument
+                    toutes formidable sans exception !</p>
+                <p class="bluetext">Leur yeux pétillaient de passions pour les jeux vidéo et leur envie de mettre en
+                    avant
+                    un domaine qui est tout le temps critiqué, les motivaient. Je ne sais pas si c’est le costume de
+                    mouton
                     que je portais qui les enchantait mais il était clair qu’ils étaient tout le temps bienveillant et
                     souriant.
                 </p>
+            </div>
+            <div class="grid">
+                <p>Je leur ai fait part d’un formulaire qui les invite à partager leur expérience, en passant d’abord
+                    par leur toute première console à leur moment d’ennuyant.</p>
+                <img class="informatique informatique--pc dgrid-start4 dgrid-end6" src="assets/images/pcedit.gif">
+                <p>Bien que certains ont commencé avec une Commodore 64 ou une Nintendo NES, la grande majorité jouent
+                    maintenant sur PC.</p>
+                <img class="informatique informatique--tour dgrid-start4 dgrid-end6" src="assets/images/tour.gif">
+            </div>
+        </section>
+        <section class="identification grid nowhitespace">
+            <img class="simplycons" src="assets/images/simplycons.png" alt="fond en pointillés">
 
-                <div class="grid">
-                    <p>Je leur ai fait part d’un formulaire qui les invite à partager leur expérience, en passant d’abord
-                        par leur toute première console à leur moment d’ennuyant.</p>
-                        <img class="informatique" src="assets/images/pcedit.gif">
-                    <p>Bien que certains ont commencé avec une Commodore 64 ou une Nintendo NES, la grande majorité jouent
-                        maintenant sur PC.</p>
-                        <img class="informatique dgrid-start4 dgrid-end6" src="assets/images/tour.gif">
-                </div>
-            </section>
-            <section class="identification grid">
-                <img class="simplycons" src="assets/images/simplycons.png" alt="fond en pointillés">
-           
-                <h2 class="title second-title">Déceler les obstacles</h2>
-                <p class="dgrid-start2">
-                    Après les échanges que j'ai pu avoir, j'ai constaté plusieurs choses. </p>
-                <p class="bluetext">Il est vrai que certains jeux sont répétitifs, que dans les jeux multijoueurs il y a souvent des
-                    méchants joueurs car ils insultent un autre en lui disant « t’es nul ! » car il n’a pas su répondre
-                    aux attentes que son équipier avait espérer.
+            <h2 class="title second-title">Déceler les obstacles</h2>
+            <p>
+                Après les échanges que j'ai pu avoir, j'ai constaté plusieurs choses. </p>
+            <p class="bluetext nowhitespace">Il est vrai que certains jeux sont répétitifs, que dans les jeux multijoueurs il y a
+                souvent des
+                méchants joueurs car ils insultent un autre en lui disant « t’es nul ! » car il n’a pas su répondre
+                aux attentes que son équipier avait espérer.
 
-                </p>
-                <p class="bluetext">
-                    Mais ces soucis sont dans un contexte où le joueur se retrouve embêter de rencontrer de temps en
-                    temps des joueurs qui sont salé, ce qui veut tout simplement désigner une personne qui est remplis
-                    de haine à en boire ses larmes salées.
-                </p>
-                <p class="dgrid-start2"> Seulement la frustration première d’un joueur et la plus courantes est d’avoir un jeu auquel sont PC
-                    n’arrive pas à supporter. </p>
-                <p class="dgrid-start2">En effet, 90% de la cause des bugs serait dû une mauvaise configuration de notre PC, ainsi le jeu
-                    rencontrera des problèmes de textures, de temps de chargement, de crash du jeu en question.
-                    Cela révèlerait un gros problème venant de son ordinateur mais aussi un coté frustrant de la part
-                    des joueurs.</p>
-                <div>
-                    <h2 class="title second-title dgrid">Condition des joueurs</h2>
-                    <p class="dgrid--start1 dgrid--end02">C’est le problème que beaucoup trop de joueurs rencontre en ce moment même. Ils se plaignent d’avoir
-                        des bugs de textures comme de la distorsion et de la disparition d’élément ainsi que des chute de
-                        FPS (frames par seconde), lorsqu’ils jouent. Ils n'ont pas de pertes de connexion ce qui est bon à
-                        savoir. C’est probablement dû à un manque de ressources venant
-                        de leur puissance en terme de Carte Graphique mais il n’empêche que l’expérience que les joueurs
-                        rencontre à ce moment là, est bien plus qu’ennuyante.</p>
-                </div>
-            </section>
-            <section class="justification">
-                <h2 class="title second-title">Éclairage stratégique</h2>
-                <p>Mes hypothèses s’établissent donc de la configuration de PC n’est pas adapté aux jeux.
-                    La technologie progresse rapidement et donc les demande de ressources deviennent plus abondantes.
-                    Elle se veut beaucoup plus immersive d’où le fait que la 3D à évoluer très vite pour permettre de
-                    créer des mondes plus vrais que nature dans les jeux-vidéos. Pour combler les joueurs dans leur
-                    immersion, elle demande une machine assez puissante.
-                    Mais alors, comment savoir à l’avance si le PC peut supporter le jeu avant de procéder à l’achat ?
-                </p>
-            </section>
-            <h2 class="title second-title">C'est pas Internet ?</h2>
-            <p>Je me demande ce qui ralenti le jeu.</p>
-            <img class="vram" src="assets/images/vram.svg" alt="fond en pointillés">
-            <p>La VRAM (Vidéo Random Access Memory, la mémoire vidéo dédier). De manière simple, il s’agit de la
-                mémoire dédiée au GPU (la carte graphique) ; c’est donc l’équivalent de la RAM avec le CPU (le
-                processeur: Utile pour le fonctionnement des programmes et l'affichage de l’écran). </p>
-            <p> Seulement la
-                VRAM elle vient stocker momentanément les données reçue directement par le jeu et les retires après
-                sont utilisation.
-                La VRAM garde en mémoire certaines données, comme les lourdes ressources graphiques, afin de les
-                charger bien plus rapidement et dans un ordre bien précis. Son plus grand inconvénient à la VRAM est
-                qu’elle ne peut pas être augmentée comme la RAM, car elle fait partie de la carte graphique, elle
-                est soudée. En plus simple, si la mémoire du GPU est insuffisante pour jouer, ils feront alors face
-                à certains problèmes de performances.</p>
-            <h3 class="title">Combien de Vram ?</h3>
-            <img class="informatique informatique--tuto" src="assets/images/tuto.gif">
-            <p>La manière la plus simple serait de faire un clic-droit sur l’arrière-plan du bureau et d’accéder au
-                paramètres d’affichage</p>
-            <p>Ensuite dans les paramètres d’affichages avancés puis dans propriétés de la carte vidéo. Ici on y
-                retrouve donc 8.235Go en mémoire graphique.</p>
-            <p>L’utilisation de la VRAM dépend du jeu.
             </p>
-            <p>Ma solution est de aider les joueurs en quête d’un jeu fluide:</p>
-            <p>Les résultats de mes interviews montrent bien qu’ils sont frustré vu au nombre de fois qu’ils ont eut
-                des ralentissement de chargement pour que le jeu leurs propose une bonne qualité vidéo. 
-                <p>La solution
-                serait de guider les joueurs qui ne veulent plus de bug dû à un manque de ressource en prévenant
-                ceux qui ont déjà un ordinateur de les informer sur les jeux auxquels ils peuvent jouer sans avoir
-                trop de soucis de manque de textures, de crash de jeux.
-                Je suis allée chercher des jeux qui permettraient à chaque configuration de pouvoir trouver son lot
-                de bonheur, c’est-à-dire sans manque de ressources. Ce n’est pas magique, c’est juste le fait de
-                bien comprendre sa configuration.</p>
-                <p>L’aide que j’ai mise au-dessus, montre que que ma VRAM peut aller jusqu’à 8Go de mémoire graphique.
-                Les résultats de mes interviews montrent bien qu’ils sont frustré vu au nombre de fois qu’ils ont
-                eut des ralentissement de chargement pour que le jeu leurs propose une bonne qualité vidéo. La
-                solution serait de guider les joueurs qui ne veulent plus de bug dû à un manque de ressource en
-                prévenant ceux qui ont déjà un ordinateur de les informer sur les jeux auxquels ils peuvent jouer
-                sans avoir trop de soucis de manque de textures, de crash de jeux.</p>
-            <section class="presentation">
-                <h2 class="title second-title">Ultime quête</h2>
-                <p>L’important c’est qu’ils comprennent que la VRAM est comme une usine qui stock des informations de
-                    manière momentanée et la supprime lorsque la ressource n’est plus présente. Comme lorsqu’on découvre un
-                    lieu, après le chargement, la mémoire VRAM devient plus légère car elle ne doit plus générer des
-                    données.</p>
-                <p>Il serait plus simple de rester dans une prise de parole objectives, en évitant l’humour forcé, rester
-                    moi-même.</p>
-                <p>Le plus compliqué ça serait de ne pas les perdre dans mes explications techniques, alors je vais partir
-                    du principes que si je leur explique ça, il ne retiendront rien en peu de temps et je perdrais ensuite
-                    leur attention. </p>
-            </section>
-            <section class="conclusion">
-                <h2 class="title second-title">Boss final</h2>
-                <p>La plupart des aides conseillent de mettre tout les jeux en basse résolution pour jouer au jeux. Bien que
-                    je respecte cette idées, je ne vois pas pourquoi on achèterait un jeu d’actualité pour se trouver avec
-                    deux pixels qui se battent. La plupart des plateformes qui vendent des clés d’installation de jeux :
-                    (comme Steam, Instant Gaming, Epic Games,..) N’indiquera jamais si votre PC aura des soucis quant au
-                    manque de ressource. C’est une technique de vendeur qui vise à faire croire à l’utilisateur qu’il peut
-                    jouer aux jeux auxquels il en a envie. La même méthode est utilisée lorsque l’on achète un PC avec
-                    l’appellation “Gaming” à coté. </p>
-                <p>C’est pourquoi je suggère que la seule meilleure solution pour tous serait que les joueurs comprennent
-                    pourquoi ils auront du mal à jouer à certains jeux et pourquoi il faudrait privilégier une carte
-                    graphique avec un minimum de 8Go de RAM graphique pour pouvoir jouer au dernier jeux afin de leur
-                    garantir une expérience incroyable dans leur moment de loisir préféré.</p>
-                <p>
-                    Je suis bien consciente que ça ne leur règlera pas leur soucis de manière instantanée, mais c’est sur
-                    que c’est grâce à cette prise de conscience que tout le monde pourra garantir au long terme, le choix de
-                    leur configuration, et apaiser leurs esprits. ’est grâce à cette prise de conscience que tout le monde
-                    pourra garantir au long terme, le choix de leur configuration, et apaiser leurs esprits.</p>
-            </section>
-            <aside class="reseaux">
-                <h2 class="title--medium mgrid-start01 mgrid-end04 dgrid-start02 dgrid-end03">Retrouvez-moi:</h2>
-                <ul class="reseaux__liste mgrid-start01 mgrid-end05 dgrid-start03 dgrid-end05">
-                    <li class="reseaux__el">
-                        <a href="https://www.behance.net/pinavetran661a" target="_blank">
-                            <span class="reseaux__txt">Behance</span>
-                            <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M8.84 10.835h-1.965v-1.859h1.783c1.878 0 1.646 1.859.182 1.859zm5.789 1.058h2.624c-.115-1.687-2.36-1.81-2.624 0zm-5.9.396h-1.854v1.947h1.824c1.782-.001 1.673-1.947.03-1.947zm15.271-.289c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-13.357-.733c1.668-.853 1.607-3.981-1.587-4.028h-4.056v8.73h3.771c3.958 0 3.891-3.967 1.872-4.702zm3.357-3.166h4v-.875h-4v.875zm4.943 3.693c-.545-3.505-6.053-3.711-6.053.872 0 4.526 5.18 3.818 5.949 1.56h-1.848c-.645.748-2.508.531-2.404-1.184h4.41c.009-.555-.009-.953-.054-1.248z"></path>
-                            </svg></a>
-                    </li>
-                    <li class="reseaux__el">
-                        <a href="https://dribbble.com/Lilflamby" target="_blank">
-                            <span class="reseaux__txt">dribbble</span>
-                            <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M11.455 9.985c-1.419.417-3.11.632-5.067.646.405-1.654 1.518-3.03 3.003-3.784.777 1.016 1.464 2.063 2.064 3.138zm.965 1.93c-.124-.28-.254-.559-.391-.835-1.622.51-3.561.769-5.804.772l-.008.148c0 1.404.504 2.692 1.34 3.695 1.266-1.901 2.891-3.164 4.863-3.78zm-3.97 4.641c1.569 1.225 3.671 1.589 5.624.836-.252-1.488-.65-2.94-1.19-4.352-1.819.542-3.285 1.714-4.434 3.516zm7.075-9.13c-.977-.754-2.197-1.209-3.525-1.209-.49 0-.964.068-1.418.184.764 1.028 1.441 2.086 2.035 3.172 1.236-.524 2.204-1.24 2.908-2.147zm8.475 4.574c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5 0c0-3.866-3.135-7-7-7s-7 3.134-7 7 3.135 7 7 7 7-3.134 7-7zm-5.824-1.349c.157.324.305.651.447.98 1.26-.217 2.641-.204 4.143.042-.073-1.292-.566-2.474-1.354-3.403-.807 1.005-1.89 1.798-3.236 2.381zm.914 2.132c.489 1.309.865 2.651 1.119 4.023 1.312-.88 2.241-2.284 2.497-3.909-1.317-.228-2.522-.268-3.616-.114z"></path>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="reseaux__el">
-                        <a href="https://www.instagram.com/pina.p_f/" target="_blank">
-                            <span class="reseaux__txt">Instagram</span>
-                            <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"></path>
-                            </svg>
-                        </a>
-    
-                    </li>
-    
-                    <li class="reseaux__el">
-                        <a href="https://twitter.com/PetitFlamb" target="_blank">
-                            <span class="reseaux__txt">Twitter</span>
-                            <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"></path>
-                            </svg>
-    
-                        </a>
-                    </li>
-                    <li class="reseaux__el">
-                        <a href="mailto:pinavetranopro@gmail.com" target="_blank">
-                            <span class="reseaux__txt">Me Contacter</span>
-                            <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"></path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="reseaux__el">
-                        <a href="https://github.com/Pina-Vetrano" target="_blank">
-                            <span class="reseaux__txt">Github</span>
-                            <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-    
-            </aside>
-            <footer>
-                <div>
-                    <nav>
-                        <ul class="list--footer">
-                            <li class="link link--footer"><a href="http://dwm.re/"><img class="DWT"
-                                        src="assets/images/dwt.svg" alt="Logo de l'option DWT de la HEAJ."></a></li>
-                            <li class="link link--footer"><a href="ui-kit.html" title="UI-KiT">UI-Kit</a>
-                            </li>
-                            <li class="link link--footer"><a href="credits.html" title="Crédits">Crédits</a></li>
-                            <li class="link link--footer"><a href="video.html" title="video">Vidéo</a></li>
+            <p class="bluetext nowhitespace">
+                Mais ces soucis sont dans un contexte où le joueur se retrouve embêter de rencontrer de temps en
+                temps des joueurs qui sont salé, ce qui veut tout simplement désigner une personne qui est remplis
+                de haine à en boire ses larmes salées.
+            </p>
+            <p class="nowhitespace"> Seulement la frustration première d’un joueur et la plus courantes est d’avoir un
+                jeu auquel sont PC
+                n’arrive pas à supporter. </p>
+            <p class="nowhitespace">En effet, 90% de la cause des bugs serait dû une mauvaise configuration de notre PC,
+                ainsi le jeu
+                rencontrera des problèmes de textures, de temps de chargement, de crash du jeu en question.
+                Cela révèlerait un gros problème venant de son ordinateur mais aussi un coté frustrant de la part
+                des joueurs.</p>
+            <div>
+                <h2 class="title second-title dgrid">Condition des joueurs</h2>
+                <p class="dgrid-start1 dgrid-end2 nowhitespace">C’est le problème que beaucoup trop de joueurs rencontre en ce
+                    moment même. Ils se plaignent d’avoir
+                    des bugs de textures comme de la distorsion et de la disparition d’élément ainsi que des chute de
+                    FPS (frames par seconde), lorsqu’ils jouent. Ils n'ont pas de pertes de connexion ce qui est bon à
+                    savoir. C’est probablement dû à un manque de ressources venant
+                    de leur puissance en terme de Carte Graphique mais il n’empêche que l’expérience que les joueurs
+                    rencontre à ce moment là, est bien plus qu’ennuyante.</p>
+            </div>
+        </section>
+        <section class="justification">
+            <h2 class="title second-title nowhitespace">Éclairage stratégique</h2>
+            <p class="nowhitespace">Mes hypothèses s’établissent donc de la configuration de PC n’est pas adapté aux jeux.
+                La technologie progresse rapidement et donc les demande de ressources deviennent plus abondantes.
+                Elle se veut beaucoup plus immersive d’où le fait que la 3D à évoluer très vite pour permettre de
+                créer des mondes plus vrais que nature dans les jeux-vidéos.
+                Mais alors, comment savoir à l’avance si le PC peut supporter le jeu avant de procéder à l’achat ?
+            </p>
+        </section>
+        <h2 class="title second-title">C'est pas Internet ?</h2>
+        <p>Je me demande ce qui ralenti le jeu.</p>
+        <img class="vram" src="assets/images/vram.svg" alt="fond en pointillés">
+        <p class="nowhitespace">La VRAM (Vidéo Random Access Memory, la mémoire vidéo dédier). De manière simple, il s’agit de la
+            mémoire dédiée au GPU (la carte graphique) ; c’est donc l’équivalent de la RAM avec le CPU (le
+            processeur: Utile pour le fonctionnement des programmes et l'affichage de l’écran). </p>
+        <p class="nowhitespace"> Seulement la
+            VRAM elle vient stocker momentanément les données reçue directement par le jeu et les retires après
+            sont utilisation.
+            La VRAM garde en mémoire certaines données, comme les lourdes ressources graphiques, afin de les
+            charger bien plus rapidement et dans un ordre bien précis. Son plus grand inconvénient à la VRAM est
+            qu’elle ne peut pas être augmentée comme la RAM, car elle fait partie de la carte graphique, elle
+            est soudée. En plus simple, si la mémoire du GPU est insuffisante pour jouer, ils feront alors face
+            à certains problèmes de performances.</p>
+        <h3 class="title dgrid-start2 dgrid-end3">Combien de Vram ?</h3>
+        <img class="informatique informatique--tuto" src="assets/images/tuto.gif">
+        <p class="nowhitespace">La manière la plus simple serait de faire un clic-droit sur l’arrière-plan du bureau et d’accéder au
+            paramètres d’affichage</p>
+        <p>class="nowhitespace"Ensuite dans les paramètres d’affichages avancés puis dans propriétés de la carte vidéo. Ici on y
+            retrouve donc 8.235Go en mémoire graphique.</p>
+        <p>L’utilisation de la VRAM dépend du jeu.
+        </p>
+        <p class="nowhitespace">Ma solution est de aider les joueurs en quête d’un jeu fluide:</p>
+        <p class="nowhitespace">Les résultats de mes interviews montrent bien qu’ils sont frustré vu au nombre de fois qu’ils ont eut
+            des ralentissement de chargement pour que le jeu leurs propose une bonne qualité vidéo.
+        <p class="nowhitespace">La solution
+            serait de guider les joueurs qui ne veulent plus de bug dû à un manque de ressource en prévenant
+            ceux qui ont déjà un ordinateur de les informer sur les jeux auxquels ils peuvent jouer sans avoir
+            trop de soucis de manque de textures, de crash de jeux.
+            Je suis allée chercher des jeux qui permettraient à chaque configuration de pouvoir trouver son lot
+            de bonheur, c’est-à-dire sans manque de ressources. Ce n’est pas magique, c’est juste le fait de
+            bien comprendre sa configuration.</p>
+        <p class="nowhitespace">L’aide que j’ai mise au-dessus, montre que que ma VRAM peut aller jusqu’à 8Go de mémoire graphique.
+            Les résultats de mes interviews montrent bien qu’ils sont frustré vu au nombre de fois qu’ils ont
+            eut des ralentissement de chargement de leurs jeux. La
+            solution serait de guider les joueurs qui ne veulent plus de bug dû à un manque de ressource en
+            prévenant ceux qui ont déjà un ordinateur de les informer sur les jeux auxquels ils peuvent jouer
+            sans avoir trop de soucis de manque de textures, de crash de jeux.</p>
+        <section class="presentation">
+            <h2 class="title second-title">Ultime quête</h2>
+            <p class="nowhitespace">L’important c’est qu’ils comprennent que la VRAM est comme une usine qui stock des informations de
+                manière momentanée et la supprime lorsque la ressource n’est plus présente. Comme lorsqu’on découvre un
+                lieu, après le chargement, la mémoire VRAM devient plus légère car elle ne doit plus générer des
+                données.</p>
+            <p class="nowhitespace">Il serait plus simple de rester dans une prise de parole objectives, en évitant l’humour forcé, rester
+                moi-même.</p>
+            <p class="nowhitespace">Le plus compliqué ça serait de ne pas les perdre dans mes explications techniques, alors je vais partir
+                du principes que si je leur explique ça, il ne retiendront rien en peu de temps et je perdrais ensuite
+                leur attention. </p>
+        </section>
+        <section class="conclusion grid">
+            <h2 class="title second-title dgrid-start2 dgrid-end5">Boss final</h2>
+            <p class="nowhitespace dgrid-start2 dgrid-end5">La plupart des aides conseillent de mettre tout les jeux en basse résolution pour jouer au jeux. Bien que
+                je respecte cette idées, je ne vois pas pourquoi on achèterait un jeu d’actualité pour se trouver avec
+                deux pixels qui se battent. La plupart des plateformes qui vendent des clés d’installation de jeux n’indiquera pas si votre PC aura des soucis quant au
+                manque de ressource. C’est une technique de vendeur qui vise à faire croire à l’utilisateur qu’il peut
+                jouer aux jeux auxquels il en a envie. La même méthode est utilisée lorsque l’on achète un PC avec
+                l’appellation “Gaming” à coté. </p>
+            <p class="nowhitespace dgrid-start2 dgrid-end5">C’est pourquoi je suggère que la seule meilleure solution pour tous serait que les joueurs comprennent
+                pourquoi ils auront du mal à jouer à certains jeux et pourquoi il faudrait privilégier une carte
+                graphique avec un minimum de 8Go de RAM graphique pour pouvoir jouer au dernier jeux afin de leur
+                garantir une expérience incroyable dans leur moment de loisir préféré.</p>
+            <p class="dgrid-start2 dgrid-end5">
+                Je suis bien consciente que ça ne leur règlera pas leur soucis de manière instantanée, mais c’est sur
+                que c’est grâce à cette prise de conscience que tout le monde pourra garantir au long terme, le choix de
+                leur configuration, et apaiser leurs esprits. ’est grâce à cette prise de conscience que tout le monde
+                pourra garantir au long terme, le choix de leur configuration, et apaiser leurs esprits.</p>
+        </section>
+        <aside class="reseaux">
+            <h2 class="title--medium mgrid-start01 mgrid-end04 dgrid-start02 dgrid-end03">Retrouvez-moi sur:</h2>
+            <ul class="reseaux__liste mgrid-start01 mgrid-end05 dgrid-start03 dgrid-end05">
+                <li class="reseaux__el">
+                    <a href="https://www.behance.net/pinavetran661a" target="_blank">
+                        <span class="reseaux__txt">Behance</span>
+                        <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M8.84 10.835h-1.965v-1.859h1.783c1.878 0 1.646 1.859.182 1.859zm5.789 1.058h2.624c-.115-1.687-2.36-1.81-2.624 0zm-5.9.396h-1.854v1.947h1.824c1.782-.001 1.673-1.947.03-1.947zm15.271-.289c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-13.357-.733c1.668-.853 1.607-3.981-1.587-4.028h-4.056v8.73h3.771c3.958 0 3.891-3.967 1.872-4.702zm3.357-3.166h4v-.875h-4v.875zm4.943 3.693c-.545-3.505-6.053-3.711-6.053.872 0 4.526 5.18 3.818 5.949 1.56h-1.848c-.645.748-2.508.531-2.404-1.184h4.41c.009-.555-.009-.953-.054-1.248z">
+                            </path>
+                        </svg></a>
+                </li>
+                <li class="reseaux__el">
+                    <a href="https://dribbble.com/Lilflamby" target="_blank">
+                        <span class="reseaux__txt">dribbble</span>
+                        <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M11.455 9.985c-1.419.417-3.11.632-5.067.646.405-1.654 1.518-3.03 3.003-3.784.777 1.016 1.464 2.063 2.064 3.138zm.965 1.93c-.124-.28-.254-.559-.391-.835-1.622.51-3.561.769-5.804.772l-.008.148c0 1.404.504 2.692 1.34 3.695 1.266-1.901 2.891-3.164 4.863-3.78zm-3.97 4.641c1.569 1.225 3.671 1.589 5.624.836-.252-1.488-.65-2.94-1.19-4.352-1.819.542-3.285 1.714-4.434 3.516zm7.075-9.13c-.977-.754-2.197-1.209-3.525-1.209-.49 0-.964.068-1.418.184.764 1.028 1.441 2.086 2.035 3.172 1.236-.524 2.204-1.24 2.908-2.147zm8.475 4.574c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5 0c0-3.866-3.135-7-7-7s-7 3.134-7 7 3.135 7 7 7 7-3.134 7-7zm-5.824-1.349c.157.324.305.651.447.98 1.26-.217 2.641-.204 4.143.042-.073-1.292-.566-2.474-1.354-3.403-.807 1.005-1.89 1.798-3.236 2.381zm.914 2.132c.489 1.309.865 2.651 1.119 4.023 1.312-.88 2.241-2.284 2.497-3.909-1.317-.228-2.522-.268-3.616-.114z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
 
-                        </ul>
-                        <small class="footer__date link link--footer"><a class="copy" href="https://pinavetrano.be/">Pina
-                                Vetrano</a> © <span class="date">2023</span></small>
-                    </nav>
+                <li class="reseaux__el">
+                    <a href="https://www.instagram.com/pina.p_f/" target="_blank">
+                        <span class="reseaux__txt">Instagram</span>
+                        <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z">
+                            </path>
+                        </svg>
+                    </a>
 
-                </div>
+                </li>
 
-            </footer>
-        </main>
-    </body>
+                <li class="reseaux__el">
+                    <a href="https://twitter.com/PetitFlamb" target="_blank">
+                        <span class="reseaux__txt">Twitter</span>
+                        <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z">
+                            </path>
+                        </svg>
 
-    </html>
+                    </a>
+                </li>
+                <li class="reseaux__el">
+                    <a href="mailto:pinavetranopro@gmail.com" target="_blank">
+                        <span class="reseaux__txt">Me Contacter</span>
+                        <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="reseaux__el">
+                    <a href="https://github.com/Pina-Vetrano" target="_blank">
+                        <span class="reseaux__txt">Github</span>
+                        <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+        <footer>
+            <div>
+                <nav>
+                    <ul class="list--footer">
+                        <li class="link link--footer"><a href="http://dwm.re/"><img class="DWT"
+                                    src="assets/images/dwt.svg" alt="Logo de l'option DWT de la HEAJ."></a></li>
+                        <li class="link link--footer"><a href="ui-kit.html" title="UI-KiT">UI-Kit</a>
+                        </li>
+                        <li class="link link--footer"><a href="credits.html" title="Crédits">Crédits</a></li>
+                        <li class="link link--footer"><a href="video.html" title="video">Vidéo</a></li>
+
+                    </ul>
+                    <small class="footer__date link link--footer"><a class="copy" href="https://pinavetrano.be/">Pina
+                            Vetrano</a> © <span class="date">2023</span></small>
+                </nav>
+
+            </div>
+
+        </footer>
+    </main>
+</body>
+
+</html>

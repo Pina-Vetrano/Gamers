@@ -113,7 +113,9 @@ body {
 .link--section {
   color: var(--color-linky);
 }
-
+.btn--burger {
+  display: none;
+}
 .list--header,
 .list--footer,
 .link--section,
@@ -141,16 +143,6 @@ main {
   margin: 0 1.5em;
 }
 
-.text__darklight {
-  display: none;
-}
-
-
-.darkModeToggle {
-  position: relative;
-  width: 100%;
-  grid-column-start: 2;
-}
 
 :root {
   --light: black;
@@ -174,7 +166,9 @@ input {
   border-color: black;
   border-style: solid;
 }
-
+.list--header {
+  display: none;
+}
 .slider::before {
   content: "";
   position: absolute;
@@ -273,13 +267,18 @@ input:checked~.slider::before {
 .com__icon {
   width: 12vh;
 }
-
+.big-paragraph {
+  font-size: 24px;
+  margin-bottom: 5rem;
+  margin-top: -14vh;
+  max-width: 39ch;
+  text-align: center;
+}
 .bubblegame {
   width: 166%;
-  height: 100%;
   position: relative;
   z-index: -1;
-  top: 10vw;
+  top: 13vw;
   left: 0;
   margin-left: -186px;
 }
@@ -452,8 +451,15 @@ a {
 }
 main {
   max-width: 1920px;
-  margin: 9em 9em;
+  margin: 0em 9em;
 }
+.second-title {
+  font-size: 76px;
+}
+.uppertitle {
+  font-size: 57px;
+} 
+
 header {
   display: flex;
   margin-top: auto;
@@ -463,7 +469,7 @@ header {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(4px);
   z-index: 2;
-  height: 12%;
+  height: 7%;
   top: 0em;
 }
 .header--second {
@@ -472,6 +478,9 @@ header {
   font-family: 'Teko Regu';
   letter-spacing: 15px;
   text-transform: uppercase;
+}
+.list--header {
+  display: flex;
 }
 .list--header {
   gap: 112px;
@@ -490,6 +499,9 @@ header {
 .informatique{
   width: 15%;
 }
+.bubble-section {
+  margin-top: -8em;
+}
 .bubblegame {
   width: 100%;
     height: 100%;
@@ -502,27 +514,57 @@ header {
 .list--header .link--header {
   font-size: 24px;
 }
-
+.container{
+  margin-top: 6rem;
+}
+.informatique--pc{
+  width: 24%;
+  margin-right: 4rem;
+}
+.informatique--tour {
+  width: 24%;
+  margin-right: 4rem;
+}
+.informatique--tuto{
+  width: 42%;
+}
+.nowhitespace {
+ max-width: 65ch; 
+}
 .iceberg {
   z-index: 1;
-  height: 100%;
-  left: 23%;
-  bottom: 86%;
-  max-width: 40ch;
+  height: 123%;
+  width: 21%;
+  left: 22%;
+  bottom: 60%;
+  max-width: 55ch;
 }
 p {
   max-width: 55ch;
 }
 .headset {
   left: 60%;
-  top: 8%;
+  top: 7%;
   position: absolute;
 }
 .store {
-  height: 80%;
+  height: 86%;
+  margin-left: -7rem;
+  margin-top: -9rem;
+}
+.vram {
+  width: 32%;
+  }
+.building-text{
+  margin-left: 48rem;
+  margin-top: -38%;
+}
+.building-text--down {
+  margin-top: -33%;
 }
 .space {
   margin-top: 15em;
+  max-width: 54ch;
 }
 .com__icon {
   width: 25vh;
@@ -544,6 +586,10 @@ p {
 .arrow {
   width: 3%;
   margin: 10%;
+}
+.big-paragraph {
+    max-width: 55ch;
+    
 }
 	/* GRID */
 	.grid {  
@@ -572,5 +618,8 @@ p {
 	.dgrid-end6{
 		grid-column-end: 6;
 	}
-
+  footer {
+    margin: 0px -14%;
+  }
+  
 }
