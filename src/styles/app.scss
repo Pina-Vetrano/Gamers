@@ -463,8 +463,18 @@ header {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(4px);
   z-index: 2;
-  height: 5%;
+  height: 12%;
   top: 0em;
+}
+.header--second {
+  margin-right: 2%;
+  font-size: 26px;
+  font-family: 'Teko Regu';
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+.list--header {
+  gap: 112px;
 }
 .btn--burger {
   display: none;
@@ -476,6 +486,10 @@ header {
   width: 32%;
   left: 55%;
 }
+
+.informatique{
+  width: 15%;
+}
 .bubblegame {
   width: 100%;
     height: 100%;
@@ -485,11 +499,16 @@ header {
     left: 0;
     margin-left: 0;
 }
-.informatique{
-  width: 15%;
-}
 .list--header .link--header {
-  font-size: 35px;
+  font-size: 24px;
+}
+
+.iceberg {
+  z-index: 1;
+  height: 100%;
+  left: 23%;
+  bottom: 86%;
+  max-width: 40ch;
 }
 p {
   max-width: 55ch;
@@ -499,4 +518,59 @@ p {
   top: 8%;
   position: absolute;
 }
+.store {
+  height: 80%;
+}
+.space {
+  margin-top: 15em;
+}
+.com__icon {
+  width: 25vh;
+}
+.com__liste .com__el {
+  position: relative;
+  margin-left: 9em;
+}
+.rencontre {
+  margin-top: 6em;
+}
+.gallery {
+  width: 435px;
+  /* height: 68px; */
+  /* margin: 3px; */
+  display: flex;
+  overflow-x: scroll;
+}
+.arrow {
+  width: 3%;
+  margin: 10%;
+}
+	/* GRID */
+	.grid {  
+		display: grid;
+    	grid-template-columns: 1fr 1.6fr 1.6fr 1fr 1.3fr 1.6fr;
+    	gap: 0px 38px;
+	}
+	.grid>*{
+		grid-column: 1/-1;
+	}
+	.dgrid-start2{
+		grid-column-start: 2;
+	}
+	.dgrid-start3{
+		grid-column-start: 3;
+	}
+	.dgrid-start5{
+		grid-column-start: 5;
+	}
+	.dgrid-end3{
+		grid-column-end: 3;
+	}
+	.dgrid-end5{
+		grid-column-end: 5;
+	}
+	.dgrid-end6{
+		grid-column-end: 6;
+	}
+
 }
