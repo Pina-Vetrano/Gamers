@@ -22,41 +22,6 @@ function toggleNavigation() {
  }
 }
 
-/* changer le theme et le nom du bouton
-
-let changeTheme = document.querySelector(".text__darklight");
-
-const darkTheme = document.querySelector(".btnTheme");
-
-darkTheme.addEventListener("click", function(){
-    if(document.body.dataset.theme === "dark"){
-        light();
-        localStorage.setItem("theme", "light");
-    } else {
-        dark();
-        localStorage.setItem("theme", "dark");
-    } 
-});
-
-const userDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-let theme = localStorage.getItem('theme');
-if((!theme && userDark) || (theme === "dark")){
-    dark();
-} else if(theme === "light"){
-    light();
-}
-
-function dark(){
-    document.body.setAttribute("data-theme", "dark");
-    changeTheme.innerHTML = "dark-mode";
-}
-
-function light(){
-    document.body.setAttribute("data-theme", "light");
-    changeTheme.innerHTML = "light-mode";
-}
-*/
 // date copyright
 let answerDate = document.querySelector(".date");
 let today = new Date();
@@ -97,7 +62,7 @@ if (verif) {
 var svgvramlegend = document.querySelector(".vram-legend");
 if (svgvramlegend){
     gsap.from(".vram-legend", {
-      scale: 1.5,
+      scale: 0.5,
     duration: 1,
     scrollTrigger: {
       trigger: ".vram-legend",
@@ -107,6 +72,9 @@ if (svgvramlegend){
     },
   });
 }
+
+var headset = document.querySelector(".headset");
+if (headset){
 gsap.from(".headset", {
   opacity: 0,
   duration: 1,
@@ -117,7 +85,9 @@ gsap.from(".headset", {
     scrub: 0.5
   }
 });
-
+}
+var iceberg = document.querySelector(".iceberg");
+if (iceberg){
 gsap.from(".iceberg", {
   opacity: 0,
   duration: 1,
@@ -128,8 +98,9 @@ gsap.from(".iceberg", {
     scrub: 0.5
   }
 });
-
-
+}
+var headelhead = document.querySelector(".headelhead");
+if (headelhead){
 gsap.fromTo(".headelhead",
   { y: 90 },
   {
@@ -140,8 +111,9 @@ gsap.fromTo(".headelhead",
     duration: 4
     
   });
-
-
+}
+var mstore = document.querySelector(".m",".store");
+if (mstore){
   gsap.timeline({ repeat:-1, repeatDelay:0, yoyo:true})
     .to('.m', {duration:(i)=>[0.8,1.3][i], y:-10266, ease:'steps(29)', stagger:-0.3}, 0)
     .to('.store', {duration:2, scale:1.1, transformOrigin:'50% 50%', ease:'power2', onComplete:swapMask}, 0)
@@ -156,7 +128,9 @@ gsap.to('.overlay', {y: '-100vh', delay:1.5});
 gsap.to('.layer-1', {y: '-100vh', delay: .5});
 gsap.to('.layer-2', {y: '-100vh', delay: .7});
 gsap.to('.layer-3', {y: '-100vh', delay: .9});
-
+}
+var bubblegame = document.querySelector(".bubblegame");
+if (bubblegame){
 gsap.from(".bubblegame", {
   opacity: 0,
   duration: 1,
@@ -168,16 +142,25 @@ gsap.from(".bubblegame", {
 
   }
 });
-
+}
+// gallery
 let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
 
+scrollContainer.addEventListener("wheel", (evt) => {
+  evt.preventDefault();
+  scrollContainer.scrollLeft += evt.deltaY;
+  scrollContainer.style.scrollBehavior = "auto";
+});
+
 nextBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 900;
+  scrollContainer.scrollLeft += 90;
 });
+
 backBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 900;
+  scrollContainer.scrollLeft -= 90;
 });
+

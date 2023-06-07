@@ -25,23 +25,16 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicongg.svg">
     <title>TFA Pina Vetrano — DWT — Heaj</title>
     <!-- CSS and Javascript -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
-    <link rel="stylesheet" href="styles/app.css">
-
-    <!-- <link rel="stylesheet" href="styles/components/normalize.css"> Refused to apply style from 'http://localhost:3000/styles/components/normalize.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
     <script src="scripts/app.js" defer></script>
+    <link rel="stylesheet" href="styles/app.css">
 
 
 </head>
 
 <body>
-    <!-- <span class="darkModeToggle">
-            <label>
-                <input type = 'checkbox' class="btnTheme">
-                <span class = 'slider'></span>
-            </label>
-        </span> -->
 
     <header>
         <div>
@@ -94,7 +87,7 @@
             <div class="layer layer-3"></div>
         </div>
     </header>
-    <img class="headelhead" src="assets/images/headel.svg" alt="fond en pointillés">
+    <img class="headelhead" src="assets/images/headel.svg" alt="fond animé remplis d'illustration dans le thème de l'informatique">
 
     <div class="header__navigation--m">
         <ul class="list__m--header">
@@ -109,7 +102,7 @@
     </div>
     <main>
 
-        <img class="elipseradial" src="assets/images/elipseradial.png" alt="fond en pointillés">
+        <img class="elipseradial" src="assets/images/elipseradial.png" alt="font radial situé à coté du titre : Le gain d'XP des joueurs pc.">
         <h1 class="big-title title title--head">Le gain d’XP
             des joueurs pc</h1>
         <p class="text bluetext underbigtitle">Dans le cadre de mon travail de fin d’année, je vous transmet ici
@@ -125,13 +118,13 @@
                     les
                     jeux vidéos.
                     Le sujet m’intéresse beaucoup car tout le monde y trouve son lot de divertissement.</p>
-                <img class="informatique headset" src="assets/images/headset.gif">
+                <img class="informatique headset" src="assets/images/headset.gif" alt= "illustration représentant un casque.">
                 <p class="bluetext space dgrid-start1 dgrid-end6">Cela me permet de ramener à la surface certains points
                     nuisibles
                     que les joueurs rencontrent bien souvent, mais qui sont bien souvent minimisés voire banalisés par
                     ce
                     moment de loisir. </p>
-                <img class="informatique iceberg" src="assets/images/icebergedit.gif">
+                <img class="informatique iceberg" src="assets/images/icebergedit.gif" alt= "illustration représentant un iceberg.">
                 <div class="debut grid">
                     <h2 class="title uppertitle dgrid-start5 dgrid-end7">Zone de départ</h2>
                     <h2 class="title undertitle dgrid-start5 dgrid-end7">Interraction</h2>
@@ -142,7 +135,7 @@
                                 width="630" height="10620" />
                         </mask>
                         <mask id="m2">
-                            <image class="m" class="maskImg"
+                            <image class="m maskImg"
                                 xlink:href="https://assets.codepen.io/721952/liquidMask1.svg" y="-1" width="630"
                                 height="10620" />
                         </mask>
@@ -153,32 +146,33 @@
                     </svg>
                     <p class="building-text">Mon idée originelle partait du fait que je voulais simplement comprendre
                         l'expérience des joueurs.
-                    </p>
-                    <p class=" building-text building-text--down">Ma mission était maintenant d’aller voir des ASBL et à
+                        Ma mission était maintenant d’aller voir des ASBL et à
                         des salles de jeux vidéo comme Gamestate
                         où
-                        les gens se retrouvent pour jouer afin que je leur propose de répondre à mes questions.</p>
+                        les gens se retrouvent pour jouer afin que je leur propose de répondre à mes questions.
+                    </p>
+
                 </div>
             </div>
         </section>
         <section class="bubble-section">
             <div class="grid">
                 <img class="informatique bubblegame dgrid-start1 dgrid-end7" src="assets/images/bubblegame.svg"
-                    alt="fond en pointillés">
-                <p class="big-paragraph dgrid-start2 dgrid-end7">J’ai rencontré des joueurs dans des applications de
+                    alt="décor illustrative dans un thème de jeux vidéo">
+                <h4 class="big-paragraph dgrid-start2 dgrid-end7">J’ai rencontré des joueurs dans des applications de
                     messagerie gratuites,
-                    sur des plateformes de streaming et aussi dans des évènements consacrés aux jeux vidéo.</p>
+                    sur des plateformes de streaming et aussi dans des évènements consacrés aux jeux vidéo.</h4>
                 <div class="list list--icon">
                     <div class="com">
                         <ul class="com__liste">
                             <li class="com__el">
-                                <img class="com__icon" src="assets/images/icon_msg.svg" alt="">
+                                <img class="com__icon" src="assets/images/icon_msg.svg" alt="icone représentant une messagerie">
                             </li>
                             <li class="com__el">
-                                <img class="com__icon" src="assets/images/icon_streaming.svg" alt="">
+                                <img class="com__icon" src="assets/images/icon_streaming.svg" alt="icone représentant le streaming">
                             </li>
                             <li class="com__el">
-                                <img class="com__icon" src="assets/images/icon_interview.svg" alt="">
+                                <img class="com__icon" src="assets/images/icon_interview.svg" alt="icone représentant une interview">
                             </li>
 
                         </ul>
@@ -187,31 +181,42 @@
             </div>
         </section>
         <section class="rencontre grid">
-            <div class="gallery-wrap">
-                <img class="arrow" src="assets/images/back.png" id="backBtn">
-                <div class="gallery">
+            <h2 class="title second-title">interviews</h2>
+         <div class="gallery-wrap">
+                <img class="arrow" src="assets/images/back.png" id="backBtn"  alt="Bouton précédent">
+            
+               <div class="gallery">
                     <div>
-                        <span><img src="assets/images/img-1.png"></span>
+                        <span>
+                            <img src="assets/images/img-1.png" alt="image représentant une interview" srcset="assets/images/img-1.png 1x, assets/images/img-1@2x.png 2x">
+                        </span>
+                        <span>
+                            <img src="assets/images/img-2.png" alt="image représentant une interview" srcset="assets/images/img-2.png 1x, assets/images/img-2@2x.png 2x">
+                        </span>
                     </div>
                     <div>
-                        <span><img src="assets/images/img-2.png"></span>
+                        <span>
+                            <img src="assets/images/img-3.png" alt="image représentant une interview" srcset="assets/images/img-3.png 1x, assets/images/img-3@2x.png 2x">
+                        </span>
+                    
+                        <span>
+                            <img src="assets/images/img-4.png" alt="image représentant une interview" srcset="assets/images/img-4.png 1x, assets/images/img-4@2x.png 2x">
+                        </span>
                     </div>
                     <div>
-                        <span><img src="assets/images/img-3.png"></span>
+                        <span>
+                            <img src="assets/images/img-5.png" alt="image représentant une interview" srcset="assets/images/img-5.png 1x, assets/images/img-5@2x.png 2x">
+                        </span>
+                
+                        <span>
+                            <img src="assets/images/img-6.png" alt="image représentant une interview" srcset="assets/images/img-6.png 1x, assets/images/img-6@2x.png 2x">
+                        </span>
+               
                     </div>
-                    <div>
-                        <span><img src="assets/images/img-4.png"></span>
-                    </div>
-                    <div>
-                        <span><img src="assets/images/img-5.png"></span>
-                    </div>
-                    <div>
-                        <span><img src="assets/images/img-6.png"></span>
-                    </div>
-                </div>
-                <img class="arrow" src="assets/images/next.png" id="nextBtn">
             </div>
-            <p class="instruction-slide dgrid-start3 dgrid-end7">swipez sur les côtés</p>
+                <img class="arrow" src="assets/images/next.png" id="nextBtn"  alt="bouton suivant.">
+            </div>
+            <p class="instruction-slide dgrid-start3 dgrid-end7">naviguez avec les boutons/scrollez</p>
             <div class="container">
                 <p>Lors de mes rencontres, que ça soit en face à face ou bien à distance, elles étaient absolument
                     toutes formidable sans exception !</p>
@@ -226,19 +231,20 @@
             <div class="grid">
                 <p>Je leur ai fait part d’un formulaire qui les invite à partager leur expérience, en passant d’abord
                     par leur toute première console à leur moment d’ennuyant.</p>
-                <img class="informatique informatique--pc dgrid-start4 dgrid-end6" src="assets/images/pcedit.gif">
+                <img class="informatique informatique--pc dgrid-start4 dgrid-end6" src="assets/images/pcedit.gif" alt="Illustration d'un PC.">
                 <p>Bien que certains ont commencé avec une Commodore 64 ou une Nintendo NES, la grande majorité jouent
                     maintenant sur PC.</p>
-                <img class="informatique informatique--tour dgrid-start4 dgrid-end6" src="assets/images/tour.gif">
+                <img class="informatique informatique--tour dgrid-start4 dgrid-end6" src="assets/images/tour.gif" alt="Illustration d'une tour PC.">
             </div>
         </section>
         <section class="identification grid nowhitespace">
-            <img class="simplycons" src="assets/images/simplycons.png" alt="fond en pointillés">
+            <img class="simplycons" src="assets/images/simplycons.png" alt="illustration d'icones simple dans un univers de jeux vidéo">
 
             <h2 class="title second-title">Déceler les obstacles</h2>
             <p>
                 Après les échanges que j'ai pu avoir, j'ai constaté plusieurs choses. </p>
-            <p class="bluetext nowhitespace">Il est vrai que certains jeux sont répétitifs, que dans les jeux multijoueurs il y a
+            <p class="bluetext nowhitespace">Il est vrai que certains jeux sont répétitifs, que dans les jeux
+                multijoueurs il y a
                 souvent des
                 méchants joueurs car ils insultent un autre en lui disant « t’es nul ! » car il n’a pas su répondre
                 aux attentes que son équipier avait espérer.
@@ -259,7 +265,8 @@
                 des joueurs.</p>
             <div>
                 <h2 class="title second-title dgrid">Condition des joueurs</h2>
-                <p class="dgrid-start1 dgrid-end2 nowhitespace">C’est le problème que beaucoup trop de joueurs rencontre en ce
+                <p class="dgrid-start1 dgrid-end2 nowhitespace">C’est le problème que beaucoup trop de joueurs rencontre
+                    en ce
                     moment même. Ils se plaignent d’avoir
                     des bugs de textures comme de la distorsion et de la disparition d’élément ainsi que des chute de
                     FPS (frames par seconde), lorsqu’ils jouent. Ils n'ont pas de pertes de connexion ce qui est bon à
@@ -270,7 +277,8 @@
         </section>
         <section class="justification">
             <h2 class="title second-title nowhitespace">Éclairage stratégique</h2>
-            <p class="nowhitespace">Mes hypothèses s’établissent donc de la configuration de PC n’est pas adapté aux jeux.
+            <p class="nowhitespace">Mes hypothèses s’établissent donc de la configuration de PC n’est pas adapté aux
+                jeux.
                 La technologie progresse rapidement et donc les demande de ressources deviennent plus abondantes.
                 Elle se veut beaucoup plus immersive d’où le fait que la 3D à évoluer très vite pour permettre de
                 créer des mondes plus vrais que nature dans les jeux-vidéos.
@@ -279,12 +287,13 @@
         </section>
         <h2 class="title second-title">C'est pas Internet ?</h2>
         <p>Je me demande ce qui ralenti le jeu.</p>
-        <img class="vram" src="assets/images/vram.svg" alt="fond en pointillés">
-        <p class="nowhitespace">La VRAM (Vidéo Random Access Memory, la mémoire vidéo dédier). De manière simple, il s’agit de la
+        <img class="vram" src="assets/images/vram.svg" alt="illustration d'une Video Random Access Memory.">
+        <p class="nowhitespace">La VRAM (Vidéo Random Access Memory, la mémoire vidéo dédier). De manière simple, il
+            s’agit de la
             mémoire dédiée au GPU (la carte graphique) ; c’est donc l’équivalent de la RAM avec le CPU (le
-            processeur: Utile pour le fonctionnement des programmes et l'affichage de l’écran). 
+            processeur: Utile pour le fonctionnement des programmes et l'affichage de l’écran).
         </p>
-        <img class="vram-legend" src="assets/images/vram-legend.svg" alt="fond en pointillés">
+        <img class="vram-legend" src="assets/images/vram-legend.svg" alt="image montrant l'emplacement de la Video Random Access Memory ainsi que du GPU">
         <p class="nowhitespace"> Seulement la
             VRAM elle vient stocker momentanément les données reçue directement par le jeu et les retires après
             sont utilisation.
@@ -294,49 +303,60 @@
             est soudée. En plus simple, si la mémoire du GPU est insuffisante pour jouer, ils feront alors face
             à certains problèmes de performances.</p>
         <h3 class="title dgrid-start2 dgrid-end3">Combien de Vram ?</h3>
-        <img class="informatique informatique--tuto" src="assets/images/tuto.gif">
-        <p class="nowhitespace">La manière la plus simple serait de faire un clic-droit sur l’arrière-plan du bureau et d’accéder au
-            paramètres d’affichage</p>
-        <p class="nowhitespace">Ensuite dans les paramètres d’affichages avancés puis dans propriétés de la carte vidéo. Ici on y
+        <img class="informatique informatique--tuto" alt="vidéo démonstrative pour savoir la taille de la Video Random Access Memory." src="assets/images/tuto.gif">
+        <p class="nowhitespace">La manière la plus simple serait de faire un clic-droit sur l’arrière-plan du bureau et
+            d’accéder au
+            paramètres d’affichage.</p>
+        <p class="nowhitespace">Ensuite dans les paramètres d’affichages avancés puis dans propriétés de la carte vidéo.
+            Ici on y
             retrouve donc 8.235Go en mémoire graphique.</p>
-        <p>L’utilisation de la VRAM dépend du jeu.
+        <p class="bluetext">L’utilisation de la VRAM dépend du jeu.
         </p>
-        
-        <p class="nowhitespace">Ma solution est d'aider les joueurs à comprendre l'art de jouer avec un faible pourcentage de bug</p>
-        <p class="nowhitespace">Les résultats de mes interviews montrent bien qu’ils sont frustré vu au nombre de fois qu’ils ont eut
-            des ralentissement de chargement pour que le jeu leurs propose une bonne qualité vidéo.
+
+        <p class="nowhitespace">Ma solution est d'aider les joueurs à comprendre l'art de jouer avec un faible
+            pourcentage de bug.</p>
+        <p class="nowhitespace">Les résultats de mes interviews montrent bien qu’ils sont frustré vu au nombre de fois
+            qu’ils ont eut
+            des ralentissement de chargement.</p>
         <p class="nowhitespace">Ce qui m'amène à vouloir les
             guider afin qu'ils n'aient qu'un faible manque de ressources en prévenant
             ceux qui ont déjà un ordinateur de les informer sur les jeux auxquels ils peuvent jouer sans avoir
             trop de soucis de manque de textures, de crash de jeux.
             Ce n’est pas magique, c’est juste le fait de
             bien comprendre sa configuration.</p>
-            
-        <p class="nowhitespace">L’aide que j’ai mise au-dessus, montre que que ma VRAM peut aller jusqu’à 8Go de mémoire graphique.
+
+        <p class="nowhitespace">L’aide que j’ai mise au-dessus, montre que que ma VRAM peut aller jusqu’à 8Go de mémoire
+            graphique.
             Les résultats de mes interviews montrent bien qu’ils sont frustré vu au nombre de fois qu’ils ont
             eut des ralentissement de chargement de leurs jeux.</p>
-            
+
         <section class="presentation">
-            <h2 class="title second-title">La voix du héros</h2>
-            <p class="nowhitespace">L’important c’est qu’ils comprennent que la VRAM est comme une usine qui stock des informations de
+            <h2 class="title second-title">Voix du héros</h2>
+            <p class="nowhitespace">L’important c’est qu’ils comprennent que la VRAM est comme une usine qui stock des
+                informations de
                 manière momentanée et la supprime lorsque la ressource n’est plus présente. Comme lorsqu’on découvre un
                 lieu, après le chargement, la mémoire VRAM devient plus légère car elle ne doit plus générer des
                 données.</p>
-            <p class="nowhitespace">Il serait plus simple de rester dans une prise de parole objectives, en évitant l’humour forcé, rester
+            <p class="nowhitespace">Il serait plus simple de rester dans une prise de parole objectives, en évitant
+                l’humour forcé, rester
                 moi-même.</p>
-            <p class="nowhitespace">Le plus compliqué ça serait de ne pas les perdre dans mes explications techniques, alors je vais partir
+            <p class="nowhitespace">Le plus compliqué ça serait de ne pas les perdre dans mes explications techniques,
+                alors je vais partir
                 du principes que si je leur explique ça, il ne retiendront rien en peu de temps et je perdrais ensuite
                 leur attention. </p>
         </section>
         <section class="conclusion grid">
             <h2 class="title second-title dgrid-start2 dgrid-end5">Boss final</h2>
-            <p class="nowhitespace dgrid-start2 dgrid-end5">La plupart des aides conseillent de mettre tout les jeux en basse résolution pour jouer au jeux. Bien que
+            <p class="nowhitespace dgrid-start2 dgrid-end5">La plupart des aides conseillent de mettre tout les jeux en
+                basse résolution pour jouer au jeux. Bien que
                 je respecte cette idées, je ne vois pas pourquoi on achèterait un jeu d’actualité pour se trouver avec
-                deux pixels qui se battent. La plupart des plateformes qui vendent des clés d’installation de jeux n’indiquera pas si votre PC aura des soucis quant au
+                deux pixels qui se battent. La plupart des plateformes qui vendent des clés d’installation de jeux
+                n’indiquera pas si votre PC aura des soucis quant au
                 manque de ressource. C’est une technique de vendeur qui vise à faire croire à l’utilisateur qu’il peut
                 jouer aux jeux auxquels il en a envie. La même méthode est utilisée lorsque l’on achète un PC avec
                 l’appellation “Gaming” à coté. </p>
-            <p class="nowhitespace dgrid-start2 dgrid-end5">C’est pourquoi je suggère que la seule meilleure solution pour tous serait que les joueurs comprennent
+            <p class="nowhitespace dgrid-start2 dgrid-end5">C’est pourquoi je suggère que la seule meilleure solution
+                pour tous serait que les joueurs comprennent
                 pourquoi ils auront du mal à jouer à certains jeux et pourquoi il faudrait privilégier une carte
                 graphique avec un minimum de 8Go de RAM graphique pour pouvoir jouer au dernier jeux afin de leur
                 garantir une expérience incroyable dans leur moment de loisir préféré.</p>
@@ -420,26 +440,29 @@
             </ul>
 
         </aside>
-        <footer>
-            <div>
-                <nav>
-                    <ul class="list--footer">
-                        <li class="link link--footer"><a href="http://dwm.re/"><img class="DWT"
-                                    src="assets/images/dwt.svg" alt="Logo de l'option DWT de la HEAJ."></a></li>
-                        <li class="link link--footer"><a href="ui-kit.html" title="UI-KiT">UI-Kit</a>
-                        </li>
-                        <li class="link link--footer"><a href="credits.html" title="Crédits">Crédits</a></li>
-                        <li class="link link--footer"><a href="video.html" title="video">Vidéo</a></li>
 
-                    </ul>
-                    <small class="footer__date link link--footer"><a class="copy" href="https://pinavetrano.be/">Pina
-                            Vetrano</a> © <span class="date">2023</span></small>
-                </nav>
 
-            </div>
-
-        </footer>
     </main>
+
+    <footer>
+        <div>
+            <nav>
+                <ul class="list--footer">
+                    <li class="link link--footer"><a href="http://dwm.re/"><img class="DWT" src="assets/images/dwt.svg"
+                                alt="Logo de l'option DWT de la HEAJ."></a></li>
+                    <li class="link link--footer"><a href="ui-kit.html" title="UI-KiT">UI-Kit</a>
+                    </li>
+                    <li class="link link--footer"><a href="credits.html" title="Crédits">Crédits</a></li>
+                    <li class="link link--footer"><a href="video.html" title="video">Vidéo</a></li>
+
+                </ul>
+                <small class="footer__date link link--footer"><a class="copy" href="https://pinavetrano.be/">Pina
+                        Vetrano</a> © <span class="date">2023</span></small>
+            </nav>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
