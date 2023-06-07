@@ -94,7 +94,19 @@ if (verif) {
     }
   });
 }
-
+var svgvramlegend = document.querySelector(".vram-legend");
+if (svgvramlegend){
+    gsap.from(".vram-legend", {
+      scale: 1.5,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".vram-legend",
+      start:'top bottom',
+      end:'bottom center',
+      scrub: 0.5
+    },
+  });
+}
 gsap.from(".headset", {
   opacity: 0,
   duration: 1,
