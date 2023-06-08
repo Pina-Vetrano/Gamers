@@ -10,7 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 // navigation
 
 let navButton = document.querySelector(".btn--burger")
- 
+var btnburger = document.querySelector(".btn--burger");
+if (btnburger){
 navButton.addEventListener("click", toggleNavigation)
  
 function toggleNavigation() {
@@ -21,7 +22,7 @@ function toggleNavigation() {
  document.body.removeAttribute("data-menu");
  }
 }
-
+}
 // date copyright
 let answerDate = document.querySelector(".date");
 let today = new Date();
@@ -40,8 +41,8 @@ if (svgvram){
     duration: 1,
     scrollTrigger: {
       trigger: ".vram",
-      start:'top bottom',
-      end:'bottom center',
+      start: 'top bottom',
+      end: 'bottom top',
       scrub: 2,
     },
   });
@@ -56,7 +57,8 @@ if (verif) {
       trigger: ".vram",
       start: 'top bottom',
       end: 'bottom top',
-      scrub: 0.5
+      scrub: 0.5,
+      toggleActions: 'play none none none',
     }
   });
 }
@@ -149,7 +151,9 @@ let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
 
-scrollContainer.addEventListener("wheel", (evt) => {
+var gallery = document.querySelector(".gallery");
+if (gallery){
+  scrollContainer.addEventListener("wheel", (evt) => {
   evt.preventDefault();
   scrollContainer.scrollLeft += evt.deltaY;
   scrollContainer.style.scrollBehavior = "auto";
@@ -157,11 +161,11 @@ scrollContainer.addEventListener("wheel", (evt) => {
 
 nextBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 90;
+  scrollContainer.scrollLeft += 250;
 });
 
 backBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft -= 90;
+  scrollContainer.scrollLeft -= 250;
 });
-
+}

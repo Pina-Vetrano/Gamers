@@ -25,7 +25,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicongg.svg">
     <title>TFA Pina Vetrano — DWT — Heaj</title>
     <!-- CSS and Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
    
     <link rel="stylesheet" href="styles/app.css">
    
@@ -80,10 +81,6 @@
                             <a class="link link--header link--active" href="index.html">accueil</a>
                         </li>
 
-                        <li>
-                            <a class="link link--header" href="experience.html">expérience</a>
-                        </li>
-
                     </ul>
 
                 </nav>
@@ -101,34 +98,29 @@
                 <a class="link mlink--header mlink--active" href="index.html">accueil</a>
             </li>
         </ul>
-        <div class="btn__lightdark--block">
-        </div>
+
 
     </div>
-    <main>
+    <main class="mainkit">
     <section>
         <div>
 
-            <h1 class="title title__h1 title__big">UI-kit</h1>
-
-            <h2>Ce que j'ai utilisé.</h2>
+            <h1 class="big-title title title--head title--uikit">UI-kit</h1>
         </div>
     </section>
-    <div class="uikit">
-        <section class="uikit__font">
-            <h2 class="title title__h2 title__h2--typo">Polices</h2>
-            <ul>
-                <li>BrogiFREE</li>
-                <li>Thorngumbald-Regular</li>
-            </ul>
-            <p class="title__h1 uikit__border">Titre en h1: BrogiFREE, en serif 36px(mobile) 80px(desktop)</p>
-            <p class="title__h2--uikit uikit__border">Titre en h2: BrogiFREE, en serif 32px</p>
-            <p>Paragraphes: Thorngumbald-Regular 18px</p>
-            <p class="uikit__border">Lien menu & footer: Thorngumbald-Regular 28px</p>
-            <p class="uikit__border">Lien article: Thorngumbald-Regular 21.6px </p>
+        <section class="ui--sections uikit">
+        <h2 class="big-title title title--head title--uikit">Polices & tailles</h2>
+        <div class="block-title">
+            <p class="big-title title title--head title--head--ui">H1 - Tegu - 57px</p>
+            <p class="title second-title  title--head title--head--ui">H2 - Tegu - 57px</p>
+            <p class="title title--head title--head--ui title--head--ui-third">H3 - Tegu - 57px</p>
+            <p class="title big-paragraph big-paragraph--ui">Paragraphe - REM - 24px</p>
+            <p class="title title--p">Paragraphe - REM - 18px</p>
+            <p class="title title--p">Paragraphe - REM</p>
+            <p class="title title--p">Paragraphe - REM</p>
 
-        </section>
-    </div>
+        </div>
+    </section>
     <h2>Les boutons et les liens</h2>
     <aside class="reseaux">
         <p>Bouton des contacts</p>
@@ -150,15 +142,9 @@
         <h2 class="title__h2--uikit uikit__border">couleurs</h2>
         <ul class="uikit-list color--block">
             <li class="color darkblue">#03023b</li>
-            <li class="color blue">#75F7FF</li>
+            <li class="color blue">#abfaff</li>
             <li class="color purple">#6526B3</li>
         </ul>
-    </section>
-    <section class="grid--container mgrid--section">
-        <div class="dgrid--start2 dgrid--end mgrid--start1 mgrid--end2">
-            <h2 class="title__first equipe__grid title__h2--second title__h2--secondtitle">mon <span
-                    class="blueish">equipe</span></h2>
-        </div>
     </section>
 </main>
 <footer>

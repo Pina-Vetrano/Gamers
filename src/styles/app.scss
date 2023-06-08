@@ -7,9 +7,7 @@
 :root {
   --color-primary: #161616;
   --color-secondary: #f5f5f5;
-  --color-linky: #F05A7E;
-  --color-link: #FFFFFF;
-  --color-visited: #710b0b;
+  --color-link: #abfaff;
   --color-body: #03023B;
 }
 
@@ -100,14 +98,10 @@ body {
   z-index: 50;
 }
 
-.link--header,
-.link--footer,
-
 .link {
   color: var(--color-link);
   text-decoration: none;
   font-size: 16px;
-  font-weight: 800;
 }
 
 .link--section {
@@ -252,8 +246,8 @@ input:checked~.slider::before {
 }
 
 .com {
-  margin-top: -11vh;
-  margin-left: -2em;
+  margin-top: 2vh;
+  margin-left: -4vh;
 }
 
 .com__liste {
@@ -281,7 +275,7 @@ input:checked~.slider::before {
 }
 
 .bubblegame {
-  width: 140%;
+  width: 170%;
   position: relative;
   z-index: -1;
   top: 13vw;
@@ -293,7 +287,11 @@ input:checked~.slider::before {
   width: 66%;
   position: relative;
   z-index: -1;
-  left: 7%;
+  margin-top: 0%;
+}
+
+.bold {
+  font-weight: bolder;
 }
 
 .informatique--tuto {
@@ -339,7 +337,7 @@ input:checked~.slider::before {
 }
 
 .gallery div {
-  width: 152%;
+  width: 183%;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 60px;
@@ -374,17 +372,6 @@ input:checked~.slider::before {
 
 .rencontre {
   margin-top: 1em;
-}
-
-.simplycons {
-  height: 12vh;
-  width: 37vh;
-  top: 244rem;
-  z-index: 1;
-  position: absolute;
-  
-  /* left: -2%; */
-  filter: drop-shadow(2px 4px 6px black);
 }
 
 .conclusion {
@@ -447,30 +434,25 @@ footer {
 }
 
 a {
-  color: #ffffff;
+  color: #abfaff;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .vram-legend {
   width: 100%;
 }
+
 .vram-text {
-  margin-top: -3rem;
-}
-.uikit__border {
-  border-top: 1px solid var(--color-primary)
+  margin-top: -4rem;
 }
 
-.uikit__font ul {
-  list-style: circle;
-  padding-left: 3em;
-}
 
 .title__h2--uikit {
   font-size: 28.43px;
   margin-top: 28px;
   margin-bottom: 32px;
   line-height: 1.7;
-  color: var(--color-primary);
 }
 
 /*
@@ -478,6 +460,10 @@ a {
   display: block;
 }
 */
+.mainkit {
+  margin: 0em 1em;
+}
+
 .uikit {
   font-size: 28.43px;
   margin-top: 28px;
@@ -485,13 +471,17 @@ a {
   line-height: 1.7;
 }
 
+.ui--sections .title {
+  margin-bottom: 23px;
+}
+
+.block-title {
+  text-align: left;
+}
+
 .uikit__links-active {
   display: block;
   border-bottom: solid 2px #84C4CE;
-  color: var(--color-primary);
-}
-
-.uikit__links-hover {
   color: var(--color-primary);
 }
 
@@ -514,6 +504,16 @@ a {
 .uikit__border {
   border-top: 1px solid var(--color-primary)
 }
+
+.big-paragraph--ui {
+  margin-top: 6vh;
+  text-align: left;
+}
+
+.title--p {
+  font-size: 18px;
+}
+
 .color {
   padding: 50px 100px 50px 100px;
   border-radius: 4px;
@@ -521,36 +521,105 @@ a {
 
 .darkblue {
   background-color: #03023b;
-  border: #75F7FF 1px solid;
+  border: #abfaff 1px solid;
   color: white;
   list-style: none;
 }
 
 .blue {
-  background-color: #75F7FF;
+  background-color: #abfaff;
 }
 
 .purple {
   background-color: #6526B3;
 }
 
-@media only screen and (min-width: 750px) {}
-.headelhead{
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 40vw;
+  border-radius: 9px;
+  border: none;
+  box-shadow: 5px 5px 20px -4px rgba(0, 0, 0, 0.33);
+}
+
+.footer-vid {
+  margin-top: 15rem;
+}
+
+.link--video {
+  display: block;
+  margin-top: 2.827rem;
+  text-align: center;
+}
+
+.title--uikit {
+  margin-top: 1em;
+  text-align: center;
+  margin-left: 32px;
+}
+
+.title--head--ui {
+  font-family: "Teko Regu";
+  src: url('../assets/fonts/Teko-Regular.otf');
+  background-image: linear-gradient(90deg, #DFE4FE, #B28DF9);
+  background-clip: text;
+  color: transparent;
+}
+
+.title--head--ui-third {
+  font-size: 32px;
+}
+
+.purifyspace {
+  margin-bottom: 5px;
+}
+.title__undertitle {
+  color: #75F7FF;
+  font-size: 43px;
+}
+@media(min-width: 640px) {
+
+.headelhead {
   width: 44vh;
   top: -17em;
 }
+
 .com {
-  margin-top: -3vh;
-  margin-left: -6vh;
+  margin-top: 2vh;
+  margin-left: -6vh
 }
-.big-paragraph{
+
+.big-paragraph {
   margin-top: -6vh;
+  margin-bottom: 0;
 }
+
 .com__liste {
   gap: 30px;
 }
+.title__undertitle {
+  color: #75F7FF;
+  font-size: 43px;
+  margin-top: -2rem;
+}
 .com__liste .com__el {
   margin-left: 0;
+}
+
+.vram {
+  margin-top: 0%;
+}
+
+.vram-text {
+  margin-top: -4rem;
+}
 }
 @media only screen and (min-width: 1024px) {
 
@@ -568,8 +637,14 @@ a {
     font-size: 76px;
   }
 
-  .uppertitle {
+  .title__uppertitle {
     font-size: 57px;
+  }
+
+  .title__undertitle {
+    color: #75F7FF;
+    font-size: 43px;
+    margin-top: -2rem;
   }
 
   header {
@@ -626,12 +701,14 @@ a {
     height: 100%;
     position: relative;
     z-index: -1;
-    top: 21vw;
+    top: 24vw;
     left: 0;
   }
+
   .paragraph-bubble {
-    margin-top: -36rem;
+    margin-top: -29rem;
   }
+
   .list--header .link--header {
     font-size: 24px;
   }
@@ -642,12 +719,14 @@ a {
 
   .informatique--pc {
     width: 24%;
-    margin-right: 5rem;
+    margin-right: 2rem;
     margin-top: -8rem;
   }
-.pc-side {
-  margin-top: 4rem;
-}
+
+  .pc-side {
+    margin-top: 4rem;
+  }
+
   .informatique--tour {
     width: 24%;
     margin-right: 3rem;
@@ -656,10 +735,18 @@ a {
 
   .informatique--tuto {
     width: 42%;
+    top: 22em;
+    left: 26rem;
+  }
+
+  .informatique--me {
+    left: 11rem;
+    position: absolute;
+    bottom: 12%;
   }
 
   .nowhitespace {
-    max-width: 65ch;
+    max-width: 56ch;
   }
 
   .iceberg {
@@ -688,14 +775,21 @@ a {
 
   .vram {
     width: 34%;
+    left: 800px;
+    margin-top: -13em;
   }
 
   .vram-legend {
     width: 100%;
+    margin-top: -17rem;
   }
- 
+
+  .vram-text {
+    margin-top: -17rem;
+  }
+
   .building-text {
-    margin-left: 48rem;
+    margin-left: 52vw;
     margin-top: -38%;
   }
 
@@ -707,22 +801,28 @@ a {
     margin-top: 3em;
     max-width: 55ch;
   }
-  .space-berg{
+
+  .space-berg {
     margin-top: 17rem;
   }
-  .space-pc{
+
+  .space-pc {
     margin-top: 13rem;
   }
+
   .com {
     margin-top: 3vh;
     margin-left: -2em;
   }
+
   .com__icon {
     width: 25vh;
   }
+
   .com__liste {
     gap: 44px;
   }
+
   .com__liste .com__el {
     position: relative;
     margin-left: 20vh;
@@ -738,21 +838,26 @@ a {
     display: flex;
     overflow-x: scroll;
   }
-.gallery div {
-  grid-gap: 107px;
-  width: 100%;
-  
-}
-.gallery div img {
-  width: 125%;
-  grid-gap: 1px;
-}
-#backBtn,
-#nextBtn {
-  width: 50px;
-  cursor: pointer;
-  margin: 40px;
-}
+
+  .gallery div {
+    grid-gap: 107px;
+    width: 100%;
+
+  }
+
+  .gallery div img {
+    width: 152%;
+    grid-gap: 1px;
+
+  }
+
+  #backBtn,
+  #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+  }
+
   .arrow {
     width: 3%;
     margin: 10%;
@@ -760,7 +865,33 @@ a {
 
   .big-paragraph {
     max-width: 55ch;
+    margin-top: -13vh;
+  }
 
+  .big-paragraph--center {
+    inset: 0;
+    margin: auto;
+  }
+
+  iframe {
+    width: 65%;
+    height: 38vw;
+  }
+
+  .mainkit {
+    margin: 0em 11em;
+  }
+
+  .title--spacing {
+    margin-bottom: -15rem;
+  }
+
+  .reseaux__liste {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+    gap: 16px;
   }
 
   /* GRID */

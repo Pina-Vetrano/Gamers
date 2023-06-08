@@ -25,8 +25,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicongg.svg">
     <title>TFA Pina Vetrano — DWT — Heaj</title>
     <!-- CSS and Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="styles/app.css">
    
     <!-- <link rel="stylesheet" href="styles/components/normalize.css"> Refused to apply style from 'http://localhost:3000/styles/components/normalize.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.-->
@@ -55,8 +55,20 @@
 
         <div class="header--second">
 
-            </button>
+            <button class="btn--burger">
+                <svg width="39" height="7" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.5 7C17.567 7 16 5.433 16 3.5V3.5C16 1.567 17.567 4.08341e-07 19.5 3.23847e-07V3.23847e-07C21.433 2.39353e-07 23 1.567 23 3.5V3.5C23 5.433 21.433 7 19.5 7V7Z"
+                        fill="white" />
+                    <path
+                        d="M35.5 7C33.567 7 32 5.433 32 3.5V3.5C32 1.567 33.567 4.08341e-07 35.5 3.23847e-07V3.23847e-07C37.433 2.39353e-07 39 1.567 39 3.5V3.5C39 5.433 37.433 7 35.5 7V7Z"
+                        fill="white" />
+                    <path
+                        d="M3.5 7C1.567 7 -6.84959e-08 5.433 -1.5299e-07 3.5V3.5C-2.37484e-07 1.567 1.567 4.08341e-07 3.5 3.23847e-07V3.23847e-07C5.433 2.39353e-07 7 1.567 7 3.5V3.5C7 5.433 5.433 7 3.5 7V7Z"
+                        fill="white" />
+                </svg>
 
+            </button>
             <div class="header__navigation">
 
                 <nav>
@@ -75,26 +87,25 @@
         </div>
         
     </header>
-    <img class="headelhead" src="assets/images/headel.svg" alt="fond en pointillés">
-        
+   
     <div class="header__navigation--m">
         <ul class="list__m--header">
             <li>
                 <a class="link mlink--header mlink--active" href="index.html">accueil</a>
             </li>
 
-            <li>
-                <a class="link mlink--header" href="experience.html">expérience</a>
-            </li>
         </ul>
-        <div class="btn__lightdark--block">
-        </div>
 
     </div>
     <main>
+        <h1 class="big-title title title--head">Vidéo</h1>
+        <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/yz0I5W2HEjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<h2 class="second-title second-title--spacing">De l'idée à la réalité</h2>
+<p>La vidéo relate le déroulement du projet. Le choix du contenu ainsi que la manière de l'aborder était libre. Voici comment j'ai choisis de la représenter.</p>
 </main>
-<footer>
+<footer class="footer-vid">
     <div>
         <nav>
             <ul class="list--footer">

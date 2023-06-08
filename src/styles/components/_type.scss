@@ -40,11 +40,12 @@ h3 {
 }
 .second-title{
   font-size: 43px;
-  max-width: 21ch;
   line-height: 100%;
   padding-top: 1em;
 }
-
+.second-title--spacing{
+  margin-top: -2rem;
+}
 .bluetext{
   color: #A9B7DC;
 }
