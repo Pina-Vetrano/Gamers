@@ -9,6 +9,7 @@
   --color-secondary: #f5f5f5;
   --color-link: #abfaff;
   --color-body: #03023B;
+  --color-link-header: #f5f5f5;
 }
 
 @media(prefers-color-scheme: dark) {
@@ -62,7 +63,6 @@ body[data-menu] .list__m--header {
 body[data-menu] .mlink--header,
 .link--header {
   font-size: 28px;
-  color: var(--color-link);
 }
 
 body[data-menu] .mlink--active,
@@ -70,7 +70,14 @@ body[data-menu] .mlink--active,
   border-bottom: solid 3px #84C4CE;
   color: var(--color-linky-active);
 }
-
+a, .link, .link--footer:hover {
+  border-bottom: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+a, .link, .link--footer:visited {
+  color: #A9B7DC;
+}
 html,
 body {
   min-height: 100%;
@@ -99,8 +106,7 @@ body {
 }
 
 .link {
-  color: var(--color-link);
-  text-decoration: none;
+  color: var(--color-link-header);
   font-size: 16px;
 }
 
@@ -434,11 +440,14 @@ footer {
 }
 
 a {
-  color: #abfaff;
-  text-decoration: underline;
+  border-bottom: underline solid #abfaff;
   font-weight: bold;
+  cursor: pointer;
 }
-
+a:hover {
+  border-bottom: none;
+  cursor: pointer;
+}
 .vram-legend {
   width: 100%;
 }
@@ -453,6 +462,7 @@ a {
   margin-top: 28px;
   margin-bottom: 32px;
   line-height: 1.7;
+  text-align: center;
 }
 
 /*
@@ -482,12 +492,12 @@ a {
 .uikit__links-active {
   display: block;
   border-bottom: solid 2px #84C4CE;
-  color: var(--color-primary);
+  color: var(--color-linky-active);
 }
 
 .uikit__links-hover:hover {
   border-bottom: solid 1px;
-  color: var(--color-primary);
+  color: var(--color-linky-active);
 }
 
 .uikit__links-visited {
@@ -497,7 +507,7 @@ a {
 .uikit-list {
   display: flex;
   flex-direction: column;
-  padding-right: 2em;
+  padding-right: 2rem;
   gap: 1em;
 }
 
@@ -633,7 +643,7 @@ iframe {
     margin: 0em 9em;
   }
 
-  .second-title {
+  .title__second{
     font-size: 76px;
   }
 
@@ -662,8 +672,8 @@ iframe {
   .header--second {
     margin-right: 2%;
     font-size: 26px;
-    font-family: 'Teko Regu';
-    letter-spacing: 15px;
+    font-family: "REMTHIN";
+    letter-spacing: 8px;
     text-transform: uppercase;
   }
 
@@ -782,6 +792,8 @@ iframe {
   .vram-legend {
     width: 100%;
     margin-top: -17rem;
+    z-index: -3;
+    position: relative;
   }
 
   .vram-text {
