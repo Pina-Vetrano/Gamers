@@ -35,7 +35,8 @@ answerDate.innerHTML = year;
 var svgvram = document.querySelector(".vram");
 if (svgvram){
     gsap.from(".vram", {
-    x: -500,
+    opacity: 0,
+    x: 550,
     duration: 1,
     scrollTrigger: {
       trigger: ".vram",

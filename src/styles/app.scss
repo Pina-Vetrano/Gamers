@@ -376,10 +376,6 @@ input:checked~.slider::before {
   margin-top: 1em;
 }
 
-.instruction-slide {
-  font-size: 16px;
-}
-
 .simplycons {
   height: 12vh;
   width: 37vh;
@@ -457,7 +453,9 @@ a {
 .vram-legend {
   width: 100%;
 }
-
+.vram-text {
+  margin-top: -3rem;
+}
 .uikit__border {
   border-top: 1px solid var(--color-primary)
 }
@@ -579,7 +577,6 @@ a {
     margin-top: auto;
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid rgba(190, 172, 163, .5);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(4px);
     z-index: 2;
@@ -625,15 +622,16 @@ a {
   }
 
   .bubblegame {
-    width: 100%;
+    width: 130%;
     height: 100%;
     position: relative;
     z-index: -1;
-    top: 10vw;
+    top: 21vw;
     left: 0;
-    margin-left: 0;
   }
-
+  .paragraph-bubble {
+    margin-top: -36rem;
+  }
   .list--header .link--header {
     font-size: 24px;
   }
@@ -644,12 +642,16 @@ a {
 
   .informatique--pc {
     width: 24%;
-    margin-right: 4rem;
+    margin-right: 5rem;
+    margin-top: -8rem;
   }
-
+.pc-side {
+  margin-top: 4rem;
+}
   .informatique--tour {
     width: 24%;
-    margin-right: 4rem;
+    margin-right: 3rem;
+    margin-top: -7rem;
   }
 
   .informatique--tuto {
@@ -663,9 +665,9 @@ a {
   .iceberg {
     z-index: 1;
     height: 123%;
-    width: 21%;
+    width: 17%;
     left: 22%;
-    bottom: 60%;
+    bottom: 75%;
     max-width: 55ch;
   }
 
@@ -675,7 +677,6 @@ a {
 
   .headset {
     left: 60%;
-    top: 7%;
     position: absolute;
   }
 
@@ -686,13 +687,13 @@ a {
   }
 
   .vram {
-    width: 32%;
+    width: 34%;
   }
 
   .vram-legend {
-    width: 66%;
+    width: 100%;
   }
-
+ 
   .building-text {
     margin-left: 48rem;
     margin-top: -38%;
@@ -703,8 +704,14 @@ a {
   }
 
   .space {
-    margin-top: 15em;
-
+    margin-top: 3em;
+    max-width: 55ch;
+  }
+  .space-berg{
+    margin-top: 17rem;
+  }
+  .space-pc{
+    margin-top: 13rem;
   }
   .com {
     margin-top: 3vh;
@@ -713,14 +720,16 @@ a {
   .com__icon {
     width: 25vh;
   }
-
+  .com__liste {
+    gap: 44px;
+  }
   .com__liste .com__el {
     position: relative;
     margin-left: 20vh;
   }
 
   .rencontre {
-    margin-top: 6em;
+    margin-top: 18rem;
   }
 
   .gallery {
