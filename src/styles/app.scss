@@ -77,7 +77,7 @@ body[data-menu] .mlink--active,
   border-bottom: 3px white solid;
 }
 a, .link, .link--footer:visited {
-  color: #A9B7DC;
+  color: #8cacff;
 }
 
 .link, .link--footer a:focus {
@@ -210,9 +210,8 @@ input:checked~.slider::before {
 }
 
 .headelhead {
-  height: 109vh;
-  width: 56vh;
-  top: -15em;
+  width: 45vh;
+  top: 4em;
   z-index: -1;
   position: absolute;
   left: -2%;
@@ -269,6 +268,8 @@ input:checked~.slider::before {
   flex-direction: row;
   align-items: flex-start;
   list-style: none;
+  margin-left: 16px;
+  padding: 0;
 }
 
 .com__liste .com__el {
@@ -282,19 +283,20 @@ input:checked~.slider::before {
 
 .big-paragraph {
   font-size: 24px;
-  margin-bottom: 5rem;
+  margin-bottom: 0;
   margin-top: -14vh;
   max-width: 39ch;
   text-align: center;
 }
 
 .bubblegame {
-  width: 170%;
+  margin-left: -20vw;
+  width: 130%;
+  height: 100%;
   position: relative;
   z-index: -1;
-  top: 13vw;
+  top: 24vw;
   left: 0;
-  margin-left: -207px;
 }
 
 .vram {
@@ -511,7 +513,7 @@ a:hover {
 }
 
 .uikit__links-visited {
-  color: #A9B7DC;
+  color: #8cacff;
 }
 .uikit__links-focus{
   font-weight: bold;
@@ -527,10 +529,6 @@ a:hover {
   flex-direction: column;
   display: inline;
 }
-.uikit__border {
-  border-top: 1px solid var(--color-primary)
-}
-
 .big-paragraph--ui {
   margin-top: 6vh;
   text-align: left;
@@ -591,7 +589,6 @@ iframe {
 .title--uikit {
   margin-top: 1em;
   text-align: center;
-  margin-left: 32px;
 }
 
 .title--head--ui {
@@ -615,6 +612,19 @@ iframe {
 }
 .block--list{
   list-style-type: none;
+}
+.block__list--el {
+  list-style-type: circle;
+  width: 300px;
+}
+.credits--sections {
+  margin-right: auto;
+  margin-top: 30px;
+}
+.headelhead--ui{
+  width: 46vh;
+  top: 2em;
+  position: absolute;
 }
 @media(min-width: 640px) {
 
@@ -653,13 +663,16 @@ iframe {
   margin-top: -4rem;
 }
 }
+.credits--mainkit{
+  max-width: 1100px;
+}
 @media only screen and (min-width: 1024px) {
 
   .headelhead {
     width: 85%;
     margin-top: 11rem;
   }
-
+ 
   main {
     max-width: 1920px;
     margin: 0em 9em;
@@ -695,7 +708,7 @@ iframe {
     margin-right: 2%;
     font-size: 26px;
     font-family: "REMTHIN";
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     text-transform: uppercase;
   }
 
@@ -946,6 +959,20 @@ iframe {
     font-weight: bold;
     display: inline;
   }
+  .block__links {
+    flex-direction: column;
+    display: inline-grid;
+    margin-bottom: 22px;
+  }
+  .block-title {
+    text-align: left;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headelhead--ui{
+  width: 85%;
+}
   /* GRID */
   .grid {
     display: grid;

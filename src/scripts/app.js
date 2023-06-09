@@ -32,8 +32,9 @@ answerDate.innerHTML = year;
 
 
 // animation 
-
 var svgvram = document.querySelector(".vram");
+
+
 if (svgvram){
     gsap.from(".vram", {
     opacity: 0,
@@ -47,6 +48,8 @@ if (svgvram){
     },
   });
 }
+
+
 var verif = document.querySelector(".vram");
 
 if (verif) {
@@ -62,7 +65,11 @@ if (verif) {
     }
   });
 }
+
+
 var svgvramlegend = document.querySelector(".vram-legend");
+
+if(window.matchMedia('(min-width: 412px)').matches){
 if (svgvramlegend){
     gsap.from(".vram-legend", {
       scale: 0.5,
@@ -75,8 +82,11 @@ if (svgvramlegend){
     },
   });
 }
+}
 
 var headset = document.querySelector(".headset");
+
+if(window.matchMedia('(min-width: 412px)').matches){
 if (headset){
 gsap.from(".headset", {
   opacity: 0,
@@ -89,7 +99,10 @@ gsap.from(".headset", {
   }
 });
 }
+}
 var iceberg = document.querySelector(".iceberg");
+
+if(window.matchMedia('(min-width: 412px)').matches){
 if (iceberg){
 gsap.from(".iceberg", {
   opacity: 0,
@@ -102,7 +115,11 @@ gsap.from(".iceberg", {
   }
 });
 }
+}
+
 var headelhead = document.querySelector(".headelhead");
+
+if(window.matchMedia('(min-width: 412px)').matches){
 if (headelhead){
 gsap.fromTo(".headelhead",
   { y: 90 },
@@ -115,7 +132,10 @@ gsap.fromTo(".headelhead",
     
   });
 }
+}
+
 var mstore = document.querySelector(".m",".store");
+if(window.matchMedia('(min-width: 375px)').matches){
 if (mstore){
   gsap.timeline({ repeat:-1, repeatDelay:0, yoyo:true})
     .to('.m', {duration:(i)=>[0.8,1.3][i], y:-10266, ease:'steps(29)', stagger:-0.3}, 0)
@@ -132,7 +152,11 @@ gsap.to('.layer-1', {y: '-100vh', delay: .5});
 gsap.to('.layer-2', {y: '-100vh', delay: .7});
 gsap.to('.layer-3', {y: '-100vh', delay: .9});
 }
+}
+
 var bubblegame = document.querySelector(".bubblegame");
+
+if(window.matchMedia('(min-width: 412px)').matches){
 if (bubblegame){
 gsap.from(".bubblegame", {
   opacity: 0,
@@ -146,6 +170,8 @@ gsap.from(".bubblegame", {
   }
 });
 }
+}
+
 // gallery
 let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
