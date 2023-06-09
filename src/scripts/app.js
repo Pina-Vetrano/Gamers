@@ -1,5 +1,4 @@
-console.info('Hello world');
-'use strict'
+'use strict';
 
 /*animation landing-page*/
 
@@ -135,7 +134,7 @@ gsap.fromTo(".headelhead",
 }
 
 var mstore = document.querySelector(".m",".store");
-if(window.matchMedia('(min-width: 375px)').matches){
+if(window.matchMedia('(min-width: 320px)').matches){
 if (mstore){
   gsap.timeline({ repeat:-1, repeatDelay:0, yoyo:true})
     .to('.m', {duration:(i)=>[0.8,1.3][i], y:-10266, ease:'steps(29)', stagger:-0.3}, 0)
