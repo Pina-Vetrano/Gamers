@@ -210,11 +210,11 @@ input:checked~.slider::before {
 }
 
 .headelhead {
-  width: 45vh;
-  top: 4em;
+  width: 51vh;
+  top: 1em;
   z-index: -1;
   position: absolute;
-  left: -2%;
+  left: 0%;
   filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -305,6 +305,7 @@ input:checked~.slider::before {
   z-index: -1;
   left: -70px;
   margin-top: 0%;
+  
 }
 
 .bold {
