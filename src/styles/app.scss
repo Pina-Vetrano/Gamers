@@ -307,7 +307,9 @@ input:checked~.slider::before {
   margin-top: 0%;
   
 }
-
+.section__vram{
+overflow-x: hidden;
+}
 .bold {
   font-weight: bolder;
 }
@@ -996,10 +998,13 @@ main {
     width: 78%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 .headelhead--ui{
   width: 85%;
-}
+  }
+.title__h2--uikit {
+  margin-top: 4em;
+  }
   /* GRID */
   .grid {
     display: grid;
